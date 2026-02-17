@@ -1,0 +1,30 @@
+name: Wine Deal Scanner
+
+on:
+  schedule:
+    - cron: "0,30 * * * *"   # runs every 30 minutes, 24/7
+  workflow_dispatch:           # allows manual trigger from GitHub UI
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install requests beautifulsoup4
+
+      - name: Run wine deal scraper
+        env:
+          GMAIL_USER: ${{ secrets.GMAIL_USER }}
+          GMAIL_PASS: ${{ secrets.GMAIL_PASS }}
+          PHONE_SMS:  ${{ secrets.PHONE_SMS }}
+        run: python scraper.py
