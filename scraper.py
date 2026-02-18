@@ -26,8 +26,13 @@ PREFERENCES = {
         "petite sirah",
     ],
     "min_discount_pct": 30,        # only alert if 30%+ off
-    "max_price": 55,               # max price after discount
-    "min_score": 90,               # minimum wine score (if listed)
+    "max_price": 45,               # max price after discount
+    "min_score": 92,               # minimum wine score (if listed)
+    "trusted_sources": [           # only trust scores from these publications
+        "wine spectator",
+        "wine advocate",
+        "robert parker",           # Wine Advocate founder
+    ],
 }
 
 # ─────────────────────────────────────────
@@ -57,10 +62,16 @@ def send_sms(deals):
         return
 
     for deal in deals[:3]:  # SMS is short — limit to top 3
+        score_line = ""
+        if deal.get("scores"):
+            score_parts = [f"{s['source']} {s['score']}" for s in deal["scores"] if s["source"] != "unknown"]
+            if score_parts:
+                score_line = f"\n{' | '.join(score_parts)}"
         body = (
             f"🍷 WINE DEAL\n"
             f"{deal['name']}\n"
-            f"${deal['price']} ({deal['discount']}% off)\n"
+            f"${deal['price']} ({deal['discount']}% off)"
+            f"{score_line}\n"
             f"{deal['url']}"
         )
         msg = MIMEText(body)
@@ -77,8 +88,11 @@ def send_sms(deals):
             print(f"❌ SMS failed: {e}")
 
 
-def matches_preferences(name, price, original_price, score=None):
-    """Check if a wine matches your taste profile."""
+def matches_preferences(name, price, original_price, scores=None):
+    """Check if a wine matches your taste profile.
+
+    scores: list of dicts like [{"score": 94, "source": "Wine Spectator"}]
+    """
     name_lower = name.lower()
 
     # Must match at least one keyword
@@ -94,10 +108,20 @@ def matches_preferences(name, price, original_price, score=None):
         discount = round((1 - price / original_price) * 100)
         if discount < PREFERENCES["min_discount_pct"]:
             return False
-    
-    # Score check (optional)
-    if score and score < PREFERENCES["min_score"]:
-        return False
+
+    # Score check — require score from a trusted publication
+    if scores:
+        trusted = PREFERENCES.get("trusted_sources", [])
+        has_trusted_score = False
+        for s in scores:
+            source_lower = s.get("source", "").lower()
+            if any(t in source_lower for t in trusted):
+                if s.get("score", 0) >= PREFERENCES["min_score"]:
+                    has_trusted_score = True
+                    break
+        # If scores were listed but none from trusted sources met the bar, skip
+        if not has_trusted_score:
+            return False
 
     return True
 
@@ -131,9 +155,26 @@ def scrape_wtso():
             discount = round((1 - price / orig_price) * 100) if orig_price > 0 else 0
             url = "https://www.wtso.com" + link_el["href"] if link_el else "https://www.wtso.com"
 
-            if matches_preferences(name, price, orig_price):
+            # Extract critic scores
+            scores = []
+            for score_el in item.select("[class*='rating'], [class*='score'], [class*='critic'], [class*='point']"):
+                text = score_el.get_text(strip=True)
+                score_match = re.search(r'(\d{2,3})\s*(?:pts?|points?)?', text)
+                if score_match:
+                    score_val = int(score_match.group(1))
+                    if 80 <= score_val <= 100:
+                        source = "unknown"
+                        text_lower = text.lower()
+                        if "spectator" in text_lower or "ws" in text_lower:
+                            source = "Wine Spectator"
+                        elif "advocate" in text_lower or "parker" in text_lower or "wa" in text_lower or "rp" in text_lower:
+                            source = "Wine Advocate"
+                        scores.append({"score": score_val, "source": source})
+
+            if matches_preferences(name, price, orig_price, scores=scores if scores else None):
                 deals.append({"name": name, "price": price, "original": orig_price,
-                               "discount": discount, "url": url, "source": "WTSO"})
+                               "discount": discount, "url": url, "source": "WTSO",
+                               "scores": scores})
     except Exception as e:
         print(f"WTSO scrape error: {e}")
     return deals
@@ -164,9 +205,26 @@ def scrape_lastbottle():
             if not url.startswith("http"):
                 url = "https://lastbottlewines.com" + url
 
-            if matches_preferences(name, price, orig):
+            # Extract critic scores
+            scores = []
+            for score_el in item.select("[class*='rating'], [class*='score'], [class*='critic'], [class*='point']"):
+                text = score_el.get_text(strip=True)
+                score_match = re.search(r'(\d{2,3})\s*(?:pts?|points?)?', text)
+                if score_match:
+                    score_val = int(score_match.group(1))
+                    if 80 <= score_val <= 100:
+                        source = "unknown"
+                        text_lower = text.lower()
+                        if "spectator" in text_lower or "ws" in text_lower:
+                            source = "Wine Spectator"
+                        elif "advocate" in text_lower or "parker" in text_lower or "wa" in text_lower or "rp" in text_lower:
+                            source = "Wine Advocate"
+                        scores.append({"score": score_val, "source": source})
+
+            if matches_preferences(name, price, orig, scores=scores if scores else None):
                 deals.append({"name": name, "price": price, "original": orig,
-                               "discount": discount, "url": url, "source": "Last Bottle"})
+                               "discount": discount, "url": url, "source": "Last Bottle",
+                               "scores": scores})
     except Exception as e:
         print(f"Last Bottle scrape error: {e}")
     return deals
@@ -198,9 +256,26 @@ def scrape_wine_dot_com():
             discount = round((1 - price / orig) * 100) if orig > 0 else 0
             url = "https://www.wine.com" + link_el["href"] if link_el and not link_el["href"].startswith("http") else (link_el["href"] if link_el else "https://www.wine.com")
 
-            if matches_preferences(name, price, orig):
+            # Extract critic scores (Wine.com often lists these)
+            scores = []
+            for score_el in item.select("[class*='rating'], [class*='score'], [class*='critic']"):
+                text = score_el.get_text(strip=True)
+                score_match = re.search(r'(\d{2,3})\s*(?:pts?|points?)?', text)
+                if score_match:
+                    score_val = int(score_match.group(1))
+                    if 80 <= score_val <= 100:
+                        source = "unknown"
+                        text_lower = text.lower()
+                        if "spectator" in text_lower or "ws" in text_lower:
+                            source = "Wine Spectator"
+                        elif "advocate" in text_lower or "parker" in text_lower or "wa" in text_lower or "rp" in text_lower:
+                            source = "Wine Advocate"
+                        scores.append({"score": score_val, "source": source})
+
+            if matches_preferences(name, price, orig, scores=scores if scores else None):
                 deals.append({"name": name, "price": price, "original": orig,
-                               "discount": discount, "url": url, "source": "Wine.com"})
+                               "discount": discount, "url": url, "source": "Wine.com",
+                               "scores": scores})
     except Exception as e:
         print(f"Wine.com scrape error: {e}")
     return deals
