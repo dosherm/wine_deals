@@ -1,10 +1,1 @@
-Last Run: 2026-02-18 01:07 UTC
-==================================================
-
-Sites Checked:
-  WTSO: no matches
-  Last Bottle: no matches
-  Wine Spies: no matches
-
-No new deals to notify.
-SMS sent to: (none this run)
+Test run: 2026-02-18 01:11 UTC - deploy test
