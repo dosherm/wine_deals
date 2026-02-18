@@ -25,9 +25,9 @@ PREFERENCES = {
         "malbec",                  # bonus — great value right now
         "petite sirah",
     ],
-    "min_discount_pct": 30,        # only alert if 30%+ off
-    "max_price": 60,               # max price after discount
-    "min_score": 92,               # minimum wine score (if listed)
+    "min_discount_pct": 0,          # temporarily 0 to test matching
+    "max_price": 999,              # temporarily high to test matching
+    "min_score": 0,                # temporarily 0 to test matching
     "trusted_sources": [           # only trust scores from these publications
         "wine spectator",
         "wine advocate",
@@ -160,9 +160,12 @@ def scrape_wtso():
         headers = {"User-Agent": "Mozilla/5.0 (compatible; WineBot/1.0)"}
         r = requests.get("https://www.wtso.com/", headers=headers, timeout=15)
         soup = BeautifulSoup(r.text, "html.parser")
+        print(f"  [DEBUG] WTSO: HTTP {r.status_code}, page size {len(r.text)} chars")
 
         # WTSO shows one featured deal prominently
-        for item in soup.select(".wine-item, .deal-item, [class*='product']")[:10]:
+        items = soup.select(".wine-item, .deal-item, [class*='product']")[:10]
+        print(f"  [DEBUG] WTSO: found {len(items)} product elements")
+        for item in items:
             name_el = item.select_one("[class*='name'], [class*='title'], h2, h3")
             price_el = item.select_one("[class*='sale'], [class*='price-sale'], [class*='current']")
             orig_el  = item.select_one("[class*='original'], [class*='retail'], [class*='was'], s")
@@ -214,8 +217,11 @@ def scrape_lastbottle():
         headers = {"User-Agent": "Mozilla/5.0 (compatible; WineBot/1.0)"}
         r = requests.get("https://lastbottlewines.com/", headers=headers, timeout=15)
         soup = BeautifulSoup(r.text, "html.parser")
+        print(f"  [DEBUG] Last Bottle: HTTP {r.status_code}, page size {len(r.text)} chars")
 
-        for item in soup.select(".offer, .wine-offer, [class*='offer']")[:5]:
+        items = soup.select(".offer, .wine-offer, [class*='offer']")[:5]
+        print(f"  [DEBUG] Last Bottle: found {len(items)} offer elements")
+        for item in items:
             name_el  = item.select_one("[class*='name'], h1, h2, h3")
             price_el = item.select_one("[class*='price'], [class*='sale']")
             orig_el  = item.select_one("[class*='retail'], [class*='original'], s, strike")
@@ -264,8 +270,11 @@ def scrape_winespies():
         headers = {"User-Agent": "Mozilla/5.0 (compatible; WineBot/1.0)"}
         r = requests.get("https://www.winespies.com/", headers=headers, timeout=15)
         soup = BeautifulSoup(r.text, "html.parser")
+        print(f"  [DEBUG] Wine Spies: HTTP {r.status_code}, page size {len(r.text)} chars")
 
-        for item in soup.select("[class*='product'], [class*='deal'], [class*='offer'], [class*='wine']")[:10]:
+        items = soup.select("[class*='product'], [class*='deal'], [class*='offer'], [class*='wine']")[:10]
+        print(f"  [DEBUG] Wine Spies: found {len(items)} product elements")
+        for item in items:
             name_el  = item.select_one("[class*='name'], [class*='title'], h1, h2, h3")
             price_el = item.select_one("[class*='price'], [class*='sale'], [class*='cost']")
             orig_el  = item.select_one("[class*='retail'], [class*='original'], [class*='was'], s, strike")
@@ -352,8 +361,10 @@ def main():
             deals = scraper()
             site_results[name]["matches"] = len(deals)
             all_deals += deals
+            print(f"  {name}: found {len(deals)} matching deal(s)")
         except Exception as e:
             site_results[name]["error"] = str(e)
+            print(f"  {name}: ERROR - {e}")
 
     # Sort by discount percentage
     all_deals.sort(key=lambda x: x.get("discount", 0), reverse=True)
