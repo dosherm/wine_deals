@@ -184,6 +184,7 @@ def scrape_wtso():
 
             discount = round((1 - price / orig_price) * 100) if orig_price > 0 else 0
             url = "https://www.wtso.com" + link_el["href"] if link_el else "https://www.wtso.com"
+            print(f"  [DEBUG] WTSO wine: '{name}' ${price} (orig ${orig_price})")
 
             # Extract critic scores
             scores = []
@@ -235,6 +236,7 @@ def scrape_lastbottle():
             orig  = float(re.sub(r"[^\d.]", "", orig_el.get_text(strip=True)) or 0) if orig_el else 0
             discount = round((1 - price / orig) * 100) if orig > 0 else 0
             url = link_el["href"] if link_el else "https://lastbottlewines.com"
+            print(f"  [DEBUG] Last Bottle wine: '{name}' ${price} (orig ${orig})")
             if not url.startswith("http"):
                 url = "https://lastbottlewines.com" + url
 
@@ -288,6 +290,7 @@ def scrape_winespies():
             orig  = float(re.sub(r"[^\d.]", "", orig_el.get_text(strip=True)) or 0) if orig_el else 0
             discount = round((1 - price / orig) * 100) if orig > 0 else 0
             url = link_el["href"] if link_el else "https://www.winespies.com"
+            print(f"  [DEBUG] Wine Spies wine: '{name}' ${price} (orig ${orig})")
             if not url.startswith("http"):
                 url = "https://www.winespies.com" + url
 
