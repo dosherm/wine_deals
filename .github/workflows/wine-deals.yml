@@ -2,7 +2,7 @@ name: Wine Deal Scanner
 
 on:
   schedule:
-    - cron: "0,30 * * * *"   # runs every 30 minutes, 24/7
+    - cron: "0,30 0-2,13-23 * * *"  # every 30 min, 7am-8pm Central (UTC-6; shifts 1hr during daylight saving)
   workflow_dispatch:           # allows manual trigger from GitHub UI
 
 jobs:
