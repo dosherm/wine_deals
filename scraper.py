@@ -25,9 +25,9 @@ PREFERENCES = {
         "malbec",                  # bonus — great value right now
         "petite sirah",
     ],
-    "min_discount_pct": 0,          # temporarily 0 to test matching
-    "max_price": 999,              # temporarily high to test matching
-    "min_score": 0,                # temporarily 0 to test matching
+    "min_discount_pct": 30,
+    "max_price": 60,
+    "min_score": 92,
     "trusted_sources": [           # only trust scores from these publications
         "wine spectator",
         "wine advocate",
@@ -154,166 +154,244 @@ def matches_preferences(name, price, original_price, scores=None):
 
 
 def scrape_wtso():
-    """Scrape Wines Till Sold Out (wtso.com)"""
+    """Scrape Wines Till Sold Out (wtso.com) — single daily deal site."""
     deals = []
     try:
-        headers = {"User-Agent": "Mozilla/5.0 (compatible; WineBot/1.0)"}
+        headers = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36"}
         r = requests.get("https://www.wtso.com/", headers=headers, timeout=15)
         soup = BeautifulSoup(r.text, "html.parser")
-        print(f"  [DEBUG] WTSO: HTTP {r.status_code}, page size {len(r.text)} chars")
 
-        # WTSO shows one featured deal prominently
-        items = soup.select(".wine-item, .deal-item, [class*='product']")[:10]
-        print(f"  [DEBUG] WTSO: found {len(items)} product elements")
-        for item in items:
-            name_el = item.select_one("[class*='name'], [class*='title'], h2, h3")
-            price_el = item.select_one("[class*='sale'], [class*='price-sale'], [class*='current']")
-            orig_el  = item.select_one("[class*='original'], [class*='retail'], [class*='was'], s")
-            link_el  = item.select_one("a[href]")
+        # WTSO has one main deal in #current-offer
+        offer = soup.select_one("#current-offer")
+        if not offer:
+            return deals
 
-            if not name_el or not price_el:
-                continue
+        # Wine name from h2 inside current-offer
+        name_el = offer.select_one("h2")
+        price_el = soup.select_one("span#price")
+        orig_el = soup.select_one("#comparable-price .price-words span")
 
-            name = name_el.get_text(strip=True)
-            price_text = price_el.get_text(strip=True)
-            price = float(re.sub(r"[^\d.]", "", price_text) or 0)
+        if not name_el or not price_el:
+            return deals
 
-            orig_price = 0
-            if orig_el:
-                orig_price = float(re.sub(r"[^\d.]", "", orig_el.get_text(strip=True)) or 0)
+        name = name_el.get_text(strip=True)
+        price = float(re.sub(r"[^\d.]", "", price_el.get_text(strip=True)) or 0)
+        orig_price = 0
+        if orig_el:
+            orig_price = float(re.sub(r"[^\d.]", "", orig_el.get_text(strip=True)) or 0)
 
-            discount = round((1 - price / orig_price) * 100) if orig_price > 0 else 0
-            url = "https://www.wtso.com" + link_el["href"] if link_el else "https://www.wtso.com"
-            print(f"  [DEBUG] WTSO wine: '{name}' ${price} (orig ${orig_price})")
+        discount = round((1 - price / orig_price) * 100) if orig_price > 0 else 0
+        url = "https://www.wtso.com"
 
-            # Extract critic scores
-            scores = []
-            for score_el in item.select("[class*='rating'], [class*='score'], [class*='critic'], [class*='point']"):
-                text = score_el.get_text(strip=True)
-                score_match = re.search(r'(\d{2,3})\s*(?:pts?|points?)?', text)
-                if score_match:
-                    score_val = int(score_match.group(1))
-                    if 80 <= score_val <= 100:
-                        source = "unknown"
-                        text_lower = text.lower()
-                        if "spectator" in text_lower or "ws" in text_lower:
-                            source = "Wine Spectator"
-                        elif "advocate" in text_lower or "parker" in text_lower or "wa" in text_lower or "rp" in text_lower:
-                            source = "Wine Advocate"
-                        scores.append({"score": score_val, "source": source})
+        # Extract critic scores from .show_description divs
+        # These contain abbreviations like "WA95-97", "WS95", "JD97", "AG92"
+        scores = []
+        score_abbrevs = {"WA": "Wine Advocate", "WS": "Wine Spectator",
+                         "JD": "Jeb Dunnuck", "AG": "Antonio Galloni",
+                         "RP": "Wine Advocate", "JS": "James Suckling",
+                         "JH": "James Halliday", "V": "Vinous"}
+        for score_el in soup.select(".show_description"):
+            text = score_el.get_text(strip=True)
+            # Match patterns like "WA95-97", "WS95", "JD97"
+            m = re.match(r'([A-Z]{1,2})(\d{2,3})(?:-(\d{2,3}))?', text)
+            if m:
+                abbrev, score_low = m.group(1), int(m.group(2))
+                score_high = int(m.group(3)) if m.group(3) else score_low
+                score_val = score_high  # use the high end of range
+                if 80 <= score_val <= 100:
+                    source = score_abbrevs.get(abbrev, "unknown")
+                    scores.append({"score": score_val, "source": source})
 
-            if matches_preferences(name, price, orig_price, scores=scores if scores else None):
-                deals.append({"name": name, "price": price, "original": orig_price,
-                               "discount": discount, "url": url, "source": "WTSO",
-                               "scores": scores})
+        if matches_preferences(name, price, orig_price, scores=scores if scores else None):
+            deals.append({"name": name, "price": price, "original": orig_price,
+                           "discount": discount, "url": url, "source": "WTSO",
+                           "scores": scores})
     except Exception as e:
         print(f"WTSO scrape error: {e}")
     return deals
 
 
 def scrape_lastbottle():
-    """Scrape Last Bottle Wines (lastbottlewines.com)"""
+    """Scrape Last Bottle Wines (lastbottlewines.com) — Shopify single-deal site."""
     deals = []
     try:
-        headers = {"User-Agent": "Mozilla/5.0 (compatible; WineBot/1.0)"}
+        headers = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36"}
         r = requests.get("https://lastbottlewines.com/", headers=headers, timeout=15)
         soup = BeautifulSoup(r.text, "html.parser")
-        print(f"  [DEBUG] Last Bottle: HTTP {r.status_code}, page size {len(r.text)} chars")
 
-        items = soup.select(".offer, .wine-offer, [class*='offer']")[:5]
-        print(f"  [DEBUG] Last Bottle: found {len(items)} offer elements")
-        for item in items:
-            name_el  = item.select_one("[class*='name'], h1, h2, h3")
-            price_el = item.select_one("[class*='price'], [class*='sale']")
-            orig_el  = item.select_one("[class*='retail'], [class*='original'], s, strike")
-            link_el  = item.select_one("a[href]")
+        # Get wine name from product title or ProductJSON
+        name = ""
+        name_el = soup.select_one("h1.product__title")
+        if name_el:
+            name = name_el.get_text(strip=True)
 
-            if not name_el or not price_el:
+        # Try ProductJSON for reliable name and deal price
+        price = 0
+        pjson_el = soup.select_one("#ProductJSON")
+        if pjson_el:
+            try:
+                pdata = json.loads(pjson_el.string)
+                if not name:
+                    name = pdata.get("title", "")
+                variants = pdata.get("variants", [])
+                if variants:
+                    price = variants[0].get("price", 0) / 100.0  # cents to dollars
+            except (json.JSONDecodeError, TypeError):
+                pass
+
+        if not name:
+            return deals
+
+        # Get retail price from the price divs
+        # Price divs show: "$25 RETAIL", "$25 BEST WEB", "$15 LAST BOTTLE"
+        orig_price = 0
+        for price_div in soup.select(".product__price"):
+            text = price_div.get_text(strip=True)
+            if "RETAIL" in text:
+                val = re.sub(r"[^\d.]", "", text.split("RETAIL")[0])
+                if val:
+                    orig_price = float(val)
+                break
+
+        # Fallback: if price wasn't in JSON, try to find "LAST BOTTLE" price
+        if price == 0:
+            for price_div in soup.select(".product__price"):
+                text = price_div.get_text(strip=True)
+                if "LAST BOTTLE" in text:
+                    val = re.sub(r"[^\d.]", "", text.split("LAST BOTTLE")[0])
+                    if val:
+                        price = float(val)
+                    break
+
+        discount = round((1 - price / orig_price) * 100) if orig_price > 0 and price > 0 else 0
+        url = "https://lastbottlewines.com"
+
+        # Extract critic scores from .product__reivew-score (note: typo in their class)
+        # and look for source in the surrounding review text
+        scores = []
+        for review_el in soup.select(".product__review"):
+            score_el = review_el.select_one(".product__reivew-score")
+            if not score_el:
                 continue
+            score_text = score_el.get_text(strip=True)
+            m = re.search(r"(\d{2,3})", score_text)
+            if not m:
+                continue
+            score_val = int(m.group(1))
+            if not (80 <= score_val <= 100):
+                continue
+            # Try to identify source from review text
+            review_text = review_el.get_text().lower()
+            source = "unknown"
+            if "wine spectator" in review_text or "ws " in review_text:
+                source = "Wine Spectator"
+            elif "wine advocate" in review_text or "robert parker" in review_text:
+                source = "Wine Advocate"
+            elif "vinous" in review_text or "galloni" in review_text:
+                source = "Vinous"
+            elif "jeb dunnuck" in review_text:
+                source = "Jeb Dunnuck"
+            elif "james suckling" in review_text:
+                source = "James Suckling"
+            elif "wine enthusiast" in review_text:
+                source = "Wine Enthusiast"
+            scores.append({"score": score_val, "source": source})
 
-            name  = name_el.get_text(strip=True)
-            price = float(re.sub(r"[^\d.]", "", price_el.get_text(strip=True)) or 0)
-            orig  = float(re.sub(r"[^\d.]", "", orig_el.get_text(strip=True)) or 0) if orig_el else 0
-            discount = round((1 - price / orig) * 100) if orig > 0 else 0
-            url = link_el["href"] if link_el else "https://lastbottlewines.com"
-            print(f"  [DEBUG] Last Bottle wine: '{name}' ${price} (orig ${orig})")
-            if not url.startswith("http"):
-                url = "https://lastbottlewines.com" + url
-
-            # Extract critic scores
-            scores = []
-            for score_el in item.select("[class*='rating'], [class*='score'], [class*='critic'], [class*='point']"):
-                text = score_el.get_text(strip=True)
-                score_match = re.search(r'(\d{2,3})\s*(?:pts?|points?)?', text)
-                if score_match:
-                    score_val = int(score_match.group(1))
-                    if 80 <= score_val <= 100:
-                        source = "unknown"
-                        text_lower = text.lower()
-                        if "spectator" in text_lower or "ws" in text_lower:
-                            source = "Wine Spectator"
-                        elif "advocate" in text_lower or "parker" in text_lower or "wa" in text_lower or "rp" in text_lower:
-                            source = "Wine Advocate"
-                        scores.append({"score": score_val, "source": source})
-
-            if matches_preferences(name, price, orig, scores=scores if scores else None):
-                deals.append({"name": name, "price": price, "original": orig,
-                               "discount": discount, "url": url, "source": "Last Bottle",
-                               "scores": scores})
+        if matches_preferences(name, price, orig_price, scores=scores if scores else None):
+            deals.append({"name": name, "price": price, "original": orig_price,
+                           "discount": discount, "url": url, "source": "Last Bottle",
+                           "scores": scores})
     except Exception as e:
         print(f"Last Bottle scrape error: {e}")
     return deals
 
 
 def scrape_winespies():
-    """Scrape Wine Spies (winespies.com) — daily flash deals"""
+    """Scrape Wine Spies (winespies.com) — daily flash deal site."""
     deals = []
     try:
-        headers = {"User-Agent": "Mozilla/5.0 (compatible; WineBot/1.0)"}
+        headers = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36"}
         r = requests.get("https://www.winespies.com/", headers=headers, timeout=15)
         soup = BeautifulSoup(r.text, "html.parser")
-        print(f"  [DEBUG] Wine Spies: HTTP {r.status_code}, page size {len(r.text)} chars")
 
-        items = soup.select("[class*='product'], [class*='deal'], [class*='offer'], [class*='wine']")[:10]
-        print(f"  [DEBUG] Wine Spies: found {len(items)} product elements")
-        for item in items:
-            name_el  = item.select_one("[class*='name'], [class*='title'], h1, h2, h3")
-            price_el = item.select_one("[class*='price'], [class*='sale'], [class*='cost']")
-            orig_el  = item.select_one("[class*='retail'], [class*='original'], [class*='was'], s, strike")
-            link_el  = item.select_one("a[href]")
+        # Wine name from offer heading
+        name_el = soup.select_one("h1.offer-heading")
+        if not name_el:
+            return deals
 
-            if not name_el or not price_el:
-                continue
+        name = name_el.get_text(strip=True)
 
-            name  = name_el.get_text(strip=True)
+        # Sale price from .pricing .price .amount
+        price = 0
+        price_el = soup.select_one(".pricing .price .amount")
+        if price_el:
             price = float(re.sub(r"[^\d.]", "", price_el.get_text(strip=True)) or 0)
-            orig  = float(re.sub(r"[^\d.]", "", orig_el.get_text(strip=True)) or 0) if orig_el else 0
-            discount = round((1 - price / orig) * 100) if orig > 0 else 0
-            url = link_el["href"] if link_el else "https://www.winespies.com"
-            print(f"  [DEBUG] Wine Spies wine: '{name}' ${price} (orig ${orig})")
-            if not url.startswith("http"):
-                url = "https://www.winespies.com" + url
 
-            # Extract critic scores (Wine Spies often lists ratings)
-            scores = []
-            for score_el in item.select("[class*='rating'], [class*='score'], [class*='critic'], [class*='point'], [class*='review']"):
-                text = score_el.get_text(strip=True)
-                score_match = re.search(r'(\d{2,3})\s*(?:pts?|points?)?', text)
-                if score_match:
-                    score_val = int(score_match.group(1))
+        # Original/retail price from .pricing .avg-price .amount
+        orig_price = 0
+        orig_el = soup.select_one(".pricing .avg-price .amount")
+        if orig_el:
+            orig_price = float(re.sub(r"[^\d.]", "", orig_el.get_text(strip=True)) or 0)
+
+        discount = round((1 - price / orig_price) * 100) if orig_price > 0 and price > 0 else 0
+        url = "https://www.winespies.com"
+
+        # Extract critic scores from feedback items
+        # Structure: .feedback-item contains .feedback-name (abbrev) + .feedback-body (score)
+        # Also: .feedback-body.award contains "Source · NN Points"
+        scores = []
+        seen_sources = set()
+        source_map = {"WE": "Wine Enthusiast", "WS": "Wine Spectator",
+                       "WA": "Wine Advocate", "RP": "Wine Advocate",
+                       "JD": "Jeb Dunnuck", "JS": "James Suckling",
+                       "AG": "Antonio Galloni", "V": "Vinous"}
+
+        # Method 1: feedback-items-list has compact items with abbrev + score
+        for item in soup.select(".feedback-items-list .feedback-item"):
+            fname = item.select_one(".feedback-name")
+            fbody = item.select_one(".feedback-body")
+            if fname and fbody:
+                abbrev = fname.get_text(strip=True)
+                score_text = fbody.get_text(strip=True)
+                m = re.search(r"(\d{2,3})", score_text)
+                if m:
+                    score_val = int(m.group(1))
+                    if 80 <= score_val <= 100:
+                        source = source_map.get(abbrev, "unknown")
+                        if source not in seen_sources:
+                            scores.append({"score": score_val, "source": source})
+                            seen_sources.add(source)
+
+        # Method 2: feedback-body.award has full text like "Wine Enthusiast · 94 Points"
+        if not scores:
+            for award in soup.select(".feedback-body.award"):
+                text = award.get_text(strip=True)
+                m = re.search(r"(\d{2,3})\s*Points?", text, re.I)
+                if m:
+                    score_val = int(m.group(1))
                     if 80 <= score_val <= 100:
                         source = "unknown"
                         text_lower = text.lower()
-                        if "spectator" in text_lower or "ws" in text_lower:
+                        if "spectator" in text_lower:
                             source = "Wine Spectator"
-                        elif "advocate" in text_lower or "parker" in text_lower or "wa" in text_lower or "rp" in text_lower:
+                        elif "advocate" in text_lower or "parker" in text_lower:
                             source = "Wine Advocate"
-                        scores.append({"score": score_val, "source": source})
+                        elif "enthusiast" in text_lower:
+                            source = "Wine Enthusiast"
+                        elif "vinous" in text_lower or "galloni" in text_lower:
+                            source = "Vinous"
+                        elif "suckling" in text_lower:
+                            source = "James Suckling"
+                        elif "dunnuck" in text_lower:
+                            source = "Jeb Dunnuck"
+                        if source not in seen_sources:
+                            scores.append({"score": score_val, "source": source})
+                            seen_sources.add(source)
 
-            if matches_preferences(name, price, orig, scores=scores if scores else None):
-                deals.append({"name": name, "price": price, "original": orig,
-                               "discount": discount, "url": url, "source": "Wine Spies",
-                               "scores": scores})
+        if matches_preferences(name, price, orig_price, scores=scores if scores else None):
+            deals.append({"name": name, "price": price, "original": orig_price,
+                           "discount": discount, "url": url, "source": "Wine Spies",
+                           "scores": scores})
     except Exception as e:
         print(f"Wine Spies scrape error: {e}")
     return deals
