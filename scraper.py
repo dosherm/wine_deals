@@ -307,14 +307,53 @@ def scrape_winespies():
     return deals
 
 
+def write_run_log(timestamp, site_results, new_deals, sms_target):
+    """Write a log of the last run to last_run.txt (overwritten each run)."""
+    lines = []
+    lines.append(f"Last Run: {timestamp}")
+    lines.append("=" * 50)
+    lines.append("")
+    lines.append("Sites Checked:")
+    for site, result in site_results.items():
+        status = f"{result['matches']} match(es)" if result["matches"] > 0 else "no matches"
+        if result.get("error"):
+            status = f"ERROR: {result['error']}"
+        lines.append(f"  {site}: {status}")
+    lines.append("")
+    if new_deals:
+        lines.append(f"Deals Notified ({len(new_deals)}):")
+        for d in new_deals:
+            lines.append(f"  [{d['source']}] {d['name']}")
+            lines.append(f"    ${d['price']} ({d['discount']}% off)")
+        lines.append("")
+        lines.append(f"SMS sent to: {sms_target}")
+    else:
+        lines.append("No new deals to notify.")
+        lines.append(f"SMS sent to: (none this run)")
+    lines.append("")
+    with open("last_run.txt", "w") as f:
+        f.write("\n".join(lines))
+
+
 def main():
-    print(f"\n🍷 Wine Deal Scanner — {datetime.now().strftime('%Y-%m-%d %H:%M UTC')}")
+    timestamp = datetime.now().strftime('%Y-%m-%d %H:%M UTC')
+    print(f"\n🍷 Wine Deal Scanner — {timestamp}")
     print("=" * 50)
 
+    site_results = {
+        "WTSO": {"matches": 0},
+        "Last Bottle": {"matches": 0},
+        "Wine Spies": {"matches": 0},
+    }
+
     all_deals = []
-    all_deals += scrape_wtso()
-    all_deals += scrape_lastbottle()
-    all_deals += scrape_winespies()
+    for name, scraper in [("WTSO", scrape_wtso), ("Last Bottle", scrape_lastbottle), ("Wine Spies", scrape_winespies)]:
+        try:
+            deals = scraper()
+            site_results[name]["matches"] = len(deals)
+            all_deals += deals
+        except Exception as e:
+            site_results[name]["error"] = str(e)
 
     # Sort by discount percentage
     all_deals.sort(key=lambda x: x.get("discount", 0), reverse=True)
@@ -338,6 +377,9 @@ def main():
         print(f"📋 {len(all_deals)} matching deal(s) found, but all already notified today.")
     else:
         print("😴 No deals matching your preferences right now. Will check again in 30 min.")
+
+    # Write run log
+    write_run_log(timestamp, site_results, new_deals, PHONE_SMS)
 
 
 if __name__ == "__main__":

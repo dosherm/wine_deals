@@ -35,3 +35,10 @@ jobs:
           GMAIL_PASS: ${{ secrets.GMAIL_PASS }}
           PHONE_SMS:  ${{ secrets.PHONE_SMS }}
         run: python scraper.py
+
+      - name: Commit run log
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add last_run.txt
+          git diff --cached --quiet || git commit -m "update last_run.txt" && git push
