@@ -257,21 +257,18 @@ def scrape_lastbottle():
     return deals
 
 
-def scrape_wine_dot_com():
-    """Scrape Wine.com sale section via their public API endpoint"""
+def scrape_winespies():
+    """Scrape Wine Spies (winespies.com) — daily flash deals"""
     deals = []
     try:
         headers = {"User-Agent": "Mozilla/5.0 (compatible; WineBot/1.0)"}
-        # Wine.com has a public catalog endpoint
-        url = ("https://www.wine.com/list/wine/7155?"
-               "sortBy=savings&pricemax=60&pricemin=20&pct_off=25")
-        r = requests.get(url, headers=headers, timeout=15)
+        r = requests.get("https://www.winespies.com/", headers=headers, timeout=15)
         soup = BeautifulSoup(r.text, "html.parser")
 
-        for item in soup.select(".prodItem, [class*='productCard'], [class*='product-item']")[:15]:
-            name_el  = item.select_one("[class*='name'], [class*='title']")
-            price_el = item.select_one("[class*='salePrice'], [class*='sale-price']")
-            orig_el  = item.select_one("[class*='regPrice'], [class*='reg-price'], s")
+        for item in soup.select("[class*='product'], [class*='deal'], [class*='offer'], [class*='wine']")[:10]:
+            name_el  = item.select_one("[class*='name'], [class*='title'], h1, h2, h3")
+            price_el = item.select_one("[class*='price'], [class*='sale'], [class*='cost']")
+            orig_el  = item.select_one("[class*='retail'], [class*='original'], [class*='was'], s, strike")
             link_el  = item.select_one("a[href]")
 
             if not name_el or not price_el:
@@ -281,11 +278,13 @@ def scrape_wine_dot_com():
             price = float(re.sub(r"[^\d.]", "", price_el.get_text(strip=True)) or 0)
             orig  = float(re.sub(r"[^\d.]", "", orig_el.get_text(strip=True)) or 0) if orig_el else 0
             discount = round((1 - price / orig) * 100) if orig > 0 else 0
-            url = "https://www.wine.com" + link_el["href"] if link_el and not link_el["href"].startswith("http") else (link_el["href"] if link_el else "https://www.wine.com")
+            url = link_el["href"] if link_el else "https://www.winespies.com"
+            if not url.startswith("http"):
+                url = "https://www.winespies.com" + url
 
-            # Extract critic scores (Wine.com often lists these)
+            # Extract critic scores (Wine Spies often lists ratings)
             scores = []
-            for score_el in item.select("[class*='rating'], [class*='score'], [class*='critic']"):
+            for score_el in item.select("[class*='rating'], [class*='score'], [class*='critic'], [class*='point'], [class*='review']"):
                 text = score_el.get_text(strip=True)
                 score_match = re.search(r'(\d{2,3})\s*(?:pts?|points?)?', text)
                 if score_match:
@@ -301,10 +300,10 @@ def scrape_wine_dot_com():
 
             if matches_preferences(name, price, orig, scores=scores if scores else None):
                 deals.append({"name": name, "price": price, "original": orig,
-                               "discount": discount, "url": url, "source": "Wine.com",
+                               "discount": discount, "url": url, "source": "Wine Spies",
                                "scores": scores})
     except Exception as e:
-        print(f"Wine.com scrape error: {e}")
+        print(f"Wine Spies scrape error: {e}")
     return deals
 
 
@@ -315,7 +314,7 @@ def main():
     all_deals = []
     all_deals += scrape_wtso()
     all_deals += scrape_lastbottle()
-    all_deals += scrape_wine_dot_com()
+    all_deals += scrape_winespies()
 
     # Sort by discount percentage
     all_deals.sort(key=lambda x: x.get("discount", 0), reverse=True)
