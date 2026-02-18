@@ -19,8 +19,8 @@ from datetime import datetime
 PREFERENCES = {
     "keywords": [
         "cabernet sauvignon", "cab sav", "cabernet",
-        "chianti", "sangiovese",
-        "syrah", "shiraz", "Guidalberto",
+        "chianti", "sangiovese", "pinot noir",
+        "syrah", "shiraz", "guidalberto",
         "zinfandel", "zin",
         "malbec",                  # bonus — great value right now
         "petite sirah",
