@@ -41,8 +41,25 @@ jobs:
           PHONE_SMS:  ${{ secrets.PHONE_SMS }}
         run: python scraper.py
 
-      - name: Commit run log
-        uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          commit_message: "update last_run.txt"
-          file_pattern: "last_run.txt"
+      - name: Upload run log via API
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          # Get current file SHA (if it exists) for the update
+          SHA=$(gh api repos/${{ github.repository }}/contents/last_run.txt --jq '.sha' 2>/dev/null || echo "")
+          CONTENT=$(base64 -w 0 last_run.txt)
+          if [ -n "$SHA" ]; then
+            gh api repos/${{ github.repository }}/contents/last_run.txt \
+              -X PUT \
+              -f message="update last_run.txt" \
+              -f content="$CONTENT" \
+              -f sha="$SHA" \
+              --silent
+          else
+            gh api repos/${{ github.repository }}/contents/last_run.txt \
+              -X PUT \
+              -f message="update last_run.txt" \
+              -f content="$CONTENT" \
+              --silent
+          fi
+          echo "last_run.txt updated via API"
