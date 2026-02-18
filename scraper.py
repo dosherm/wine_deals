@@ -52,6 +52,33 @@ GMAIL_USER = os.environ.get("GMAIL_USER", "")
 GMAIL_PASS = os.environ.get("GMAIL_PASS", "")
 PHONE_SMS  = os.environ.get("PHONE_SMS", "")   # e.g. 3125551234@vtext.com
 
+NOTIFIED_FILE = "notified.json"
+
+
+def load_notified():
+    """Load the set of wines already notified today."""
+    today = datetime.now().strftime("%Y-%m-%d")
+    try:
+        with open(NOTIFIED_FILE) as f:
+            data = json.load(f)
+        if data.get("date") == today:
+            return data.get("wines", [])
+    except (FileNotFoundError, json.JSONDecodeError):
+        pass
+    return []
+
+
+def save_notified(wine_keys):
+    """Save the set of wines notified today."""
+    today = datetime.now().strftime("%Y-%m-%d")
+    with open(NOTIFIED_FILE, "w") as f:
+        json.dump({"date": today, "wines": wine_keys}, f)
+
+
+def wine_key(deal):
+    """Create a unique key for a wine deal (name + source)."""
+    return f"{deal['name'].lower().strip()}|{deal['source'].lower()}"
+
 
 def send_sms(deals):
     """Send deals via email-to-SMS gateway (free, no account needed)."""
@@ -293,13 +320,23 @@ def main():
     # Sort by discount percentage
     all_deals.sort(key=lambda x: x.get("discount", 0), reverse=True)
 
-    if all_deals:
-        print(f"\n🎉 Found {len(all_deals)} matching deal(s)!")
-        for d in all_deals:
+    # Filter out wines already notified today
+    already_notified = load_notified()
+    new_deals = [d for d in all_deals if wine_key(d) not in already_notified]
+
+    if new_deals:
+        print(f"\n🎉 Found {len(new_deals)} new deal(s)! ({len(all_deals) - len(new_deals)} already notified today)")
+        for d in new_deals:
             print(f"  [{d['source']}] {d['name']}")
             print(f"    ${d['price']} (was ${d['original']}, {d['discount']}% off)")
             print(f"    {d['url']}\n")
-        send_sms(all_deals)
+        send_sms(new_deals)
+
+        # Mark these wines as notified
+        already_notified.extend(wine_key(d) for d in new_deals)
+        save_notified(already_notified)
+    elif all_deals:
+        print(f"📋 {len(all_deals)} matching deal(s) found, but all already notified today.")
     else:
         print("😴 No deals matching your preferences right now. Will check again in 30 min.")
 

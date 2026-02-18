@@ -19,6 +19,13 @@ jobs:
         with:
           python-version: "3.11"
 
+      - name: Restore notification cache
+        uses: actions/cache@v4
+        with:
+          path: notified.json
+          key: notified-${{ github.run_id }}
+          restore-keys: notified-
+
       - name: Install dependencies
         run: pip install requests beautifulsoup4
 
