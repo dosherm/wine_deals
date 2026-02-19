@@ -111,12 +111,23 @@ def send_sms(deals):
         try:
             with smtplib.SMTP_SSL("smtp.gmail.com", 465) as server:
                 server.login(GMAIL_USER, GMAIL_PASS)
-                server.sendmail(GMAIL_USER, PHONE_SMS, msg.as_string())
-            print(f"✅ SMS sent: {deal['name']}")
-            sms_results.append({"name": deal["name"], "status": "SENT"})
+                refused = server.sendmail(GMAIL_USER, PHONE_SMS, msg.as_string())
+            if refused:
+                error_msg = str(refused)
+                print(f"❌ SMS rejected by gateway: {deal['name']} — {error_msg}")
+                sms_results.append({"name": deal["name"], "status": "REJECTED", "error": error_msg})
+            else:
+                print(f"✅ SMS accepted by gateway: {deal['name']}")
+                sms_results.append({"name": deal["name"], "status": "DELIVERED TO GATEWAY"})
+        except smtplib.SMTPRecipientsRefused as e:
+            print(f"❌ SMS recipient refused: {e}")
+            sms_results.append({"name": deal["name"], "status": "RECIPIENT REFUSED", "error": str(e)})
+        except smtplib.SMTPAuthenticationError as e:
+            print(f"❌ Gmail auth failed: {e}")
+            sms_results.append({"name": deal["name"], "status": "AUTH FAILED", "error": str(e)})
         except Exception as e:
             print(f"❌ SMS failed: {e}")
-            sms_results.append({"name": deal["name"], "status": "FAILED", "error": str(e)})
+            sms_results.append({"name": deal["name"], "status": "SMTP ERROR", "error": str(e)})
     return sms_results
 
 
