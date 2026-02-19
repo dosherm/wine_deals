@@ -36,9 +36,7 @@ jobs:
 
       - name: Run wine deal scraper
         env:
-          GMAIL_USER: ${{ secrets.GMAIL_USER }}
-          GMAIL_PASS: ${{ secrets.GMAIL_PASS }}
-          PHONE_SMS:  ${{ secrets.PHONE_SMS }}
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
         run: python scraper.py
 
       - name: Upload run log via API

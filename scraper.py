@@ -1,13 +1,11 @@
 """
 Wine Deal Scraper
-Checks WTSO, Last Bottle, and Wine.com for deals matching your taste profile.
-Sends a free SMS via email-to-SMS gateway when a great deal is found.
+Checks WTSO, Last Bottle, and Wine Spies for deals matching your taste profile.
+Sends push notifications via ntfy.sh when a great deal is found.
 """
 
 import requests
 from bs4 import BeautifulSoup
-import smtplib
-from email.mime.text import MIMEText
 import json
 import os
 import re
@@ -36,21 +34,13 @@ PREFERENCES = {
 }
 
 # ─────────────────────────────────────────
-# SMS GATEWAY CONFIG
-# Set these as GitHub Actions Secrets:
-#   GMAIL_USER     → your gmail address
-#   GMAIL_PASS     → your gmail app password (not regular password)
-#   PHONE_SMS      → e.g. 3125551234@vtext.com
-#
-# Common SMS gateways:
-#   Verizon:  @vtext.com
-#   AT&T:     @txt.att.net
-#   T-Mobile: @tmomail.net
-#   Sprint:   @messaging.sprintpcs.com
+# NOTIFICATION CONFIG (ntfy.sh)
+# Set NTFY_TOPIC as a GitHub Actions Secret.
+# Install the ntfy app on your phone and subscribe to the same topic.
+#   Android: https://play.google.com/store/apps/details?id=io.heckel.ntfy
+#   iOS:     https://apps.apple.com/app/ntfy/id1625396347
 # ─────────────────────────────────────────
-GMAIL_USER = os.environ.get("GMAIL_USER", "")
-GMAIL_PASS = os.environ.get("GMAIL_PASS", "")
-PHONE_SMS  = os.environ.get("PHONE_SMS", "")   # e.g. 3125551234@vtext.com
+NTFY_TOPIC = os.environ.get("NTFY_TOPIC", "")
 
 NOTIFIED_FILE = "notified.json"
 
@@ -80,55 +70,52 @@ def wine_key(deal):
     return f"{deal['name'].lower().strip()}|{deal['source'].lower()}"
 
 
-def send_sms(deals):
-    """Send deals via email-to-SMS gateway. Returns list of status dicts."""
-    sms_results = []
-    if not all([GMAIL_USER, GMAIL_PASS, PHONE_SMS]):
-        print("⚠️  SMS credentials not set — printing deals only")
+def send_notifications(deals):
+    """Send deal notifications via ntfy.sh. Returns list of status dicts."""
+    results = []
+    if not NTFY_TOPIC:
+        print("⚠️  NTFY_TOPIC not set — printing deals only")
         for d in deals:
             print(f"  🍷 {d['name']} | ${d['price']} ({d['discount']}% off) | {d['url']}")
-            sms_results.append({"name": d["name"], "status": "SKIPPED", "error": "credentials not set"})
-        return sms_results
+            results.append({"name": d["name"], "status": "SKIPPED", "error": "NTFY_TOPIC not set"})
+        return results
 
-    for deal in deals[:3]:  # SMS is short — limit to top 3
+    for deal in deals:
         score_line = ""
         if deal.get("scores"):
             score_parts = [f"{s['source']} {s['score']}" for s in deal["scores"] if s["source"] != "unknown"]
             if score_parts:
                 score_line = f"\n{' | '.join(score_parts)}"
+
         body = (
-            f"🍷 WINE DEAL\n"
             f"{deal['name']}\n"
             f"${deal['price']} ({deal['discount']}% off)"
             f"{score_line}\n"
             f"{deal['url']}"
         )
-        msg = MIMEText(body)
-        msg["From"] = GMAIL_USER
-        msg["To"] = PHONE_SMS
-        msg["Subject"] = ""
 
         try:
-            with smtplib.SMTP_SSL("smtp.gmail.com", 465) as server:
-                server.login(GMAIL_USER, GMAIL_PASS)
-                refused = server.sendmail(GMAIL_USER, PHONE_SMS, msg.as_string())
-            if refused:
-                error_msg = str(refused)
-                print(f"❌ SMS rejected by gateway: {deal['name']} — {error_msg}")
-                sms_results.append({"name": deal["name"], "status": "REJECTED", "error": error_msg})
+            resp = requests.post(
+                f"https://ntfy.sh/{NTFY_TOPIC}",
+                data=body.encode("utf-8"),
+                headers={
+                    "Title": f"Wine Deal: {deal['source']}",
+                    "Priority": "high",
+                    "Tags": "wine_glass",
+                    "Click": deal["url"],
+                },
+                timeout=10,
+            )
+            if resp.status_code == 200:
+                print(f"✅ Notification sent: {deal['name']}")
+                results.append({"name": deal["name"], "status": "DELIVERED (HTTP 200)"})
             else:
-                print(f"✅ SMS accepted by gateway: {deal['name']}")
-                sms_results.append({"name": deal["name"], "status": "DELIVERED TO GATEWAY"})
-        except smtplib.SMTPRecipientsRefused as e:
-            print(f"❌ SMS recipient refused: {e}")
-            sms_results.append({"name": deal["name"], "status": "RECIPIENT REFUSED", "error": str(e)})
-        except smtplib.SMTPAuthenticationError as e:
-            print(f"❌ Gmail auth failed: {e}")
-            sms_results.append({"name": deal["name"], "status": "AUTH FAILED", "error": str(e)})
+                print(f"❌ Notification failed: {deal['name']} — HTTP {resp.status_code}")
+                results.append({"name": deal["name"], "status": f"FAILED (HTTP {resp.status_code})", "error": resp.text[:100]})
         except Exception as e:
-            print(f"❌ SMS failed: {e}")
-            sms_results.append({"name": deal["name"], "status": "SMTP ERROR", "error": str(e)})
-    return sms_results
+            print(f"❌ Notification error: {e}")
+            results.append({"name": deal["name"], "status": "ERROR", "error": str(e)})
+    return results
 
 
 def matches_preferences(name, price, original_price, scores=None):
@@ -407,7 +394,7 @@ def scrape_winespies():
     return deals
 
 
-def write_run_log(timestamp, site_results, new_deals, sms_target, sms_results=None):
+def write_run_log(timestamp, site_results, new_deals, notify_results=None):
     """Write a log of the last run to last_run.txt (overwritten each run)."""
     lines = []
     lines.append(f"Last Run: {timestamp}")
@@ -426,16 +413,15 @@ def write_run_log(timestamp, site_results, new_deals, sms_target, sms_results=No
             lines.append(f"  [{d['source']}] {d['name']}")
             lines.append(f"    ${d['price']} ({d['discount']}% off)")
         lines.append("")
-        lines.append(f"SMS Gateway: {sms_target}")
-        if sms_results:
-            for sr in sms_results:
-                error_info = f" — {sr['error']}" if sr.get("error") else ""
-                lines.append(f"  {sr['status']}: {sr['name']}{error_info}")
+        lines.append("Notification Status (ntfy.sh):")
+        if notify_results:
+            for nr in notify_results:
+                error_info = f" — {nr['error']}" if nr.get("error") else ""
+                lines.append(f"  {nr['status']}: {nr['name']}{error_info}")
         else:
-            lines.append("  (no SMS results recorded)")
+            lines.append("  (no results recorded)")
     else:
         lines.append("No new deals to notify.")
-        lines.append(f"SMS Gateway: (none this run)")
     lines.append("")
     with open("last_run.txt", "w") as f:
         f.write("\n".join(lines))
@@ -470,14 +456,14 @@ def main():
     already_notified = load_notified()
     new_deals = [d for d in all_deals if wine_key(d) not in already_notified]
 
-    sms_results = []
+    notify_results = []
     if new_deals:
         print(f"\n🎉 Found {len(new_deals)} new deal(s)! ({len(all_deals) - len(new_deals)} already notified today)")
         for d in new_deals:
             print(f"  [{d['source']}] {d['name']}")
             print(f"    ${d['price']} (was ${d['original']}, {d['discount']}% off)")
             print(f"    {d['url']}\n")
-        sms_results = send_sms(new_deals)
+        notify_results = send_notifications(new_deals)
 
         # Mark these wines as notified
         already_notified.extend(wine_key(d) for d in new_deals)
@@ -488,7 +474,7 @@ def main():
         print("😴 No deals matching your preferences right now. Will check again in 30 min.")
 
     # Write run log
-    write_run_log(timestamp, site_results, new_deals, PHONE_SMS, sms_results)
+    write_run_log(timestamp, site_results, new_deals, notify_results)
 
 
 if __name__ == "__main__":
