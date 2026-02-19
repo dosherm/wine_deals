@@ -136,18 +136,12 @@ def matches_preferences(name, price, original_price, scores=None):
         if discount < PREFERENCES["min_discount_pct"]:
             return False
 
-    # Score check — require score from a trusted publication
+    # Score check — any source with a high enough score counts
     if scores:
-        trusted = PREFERENCES.get("trusted_sources", [])
-        has_trusted_score = False
-        for s in scores:
-            source_lower = s.get("source", "").lower()
-            if any(t in source_lower for t in trusted):
-                if s.get("score", 0) >= PREFERENCES["min_score"]:
-                    has_trusted_score = True
-                    break
-        # If scores were listed but none from trusted sources met the bar, skip
-        if not has_trusted_score:
+        has_good_score = any(
+            s.get("score", 0) >= PREFERENCES["min_score"] for s in scores
+        )
+        if not has_good_score:
             return False
 
     return True

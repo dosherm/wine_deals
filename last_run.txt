@@ -1,10 +1,17 @@
-Last Run: 2026-02-18 23:38 UTC
+Last Run: 2026-02-18 18:05 UTC
 ==================================================
 
 Sites Checked:
-  WTSO: no matches
-  Last Bottle: no matches
-  Wine Spies: no matches
+  WTSO: 1 match(es)
+  Last Bottle: 1 match(es)
+  Wine Spies: 1 match(es)
 
-No new deals to notify.
-SMS sent to: (none this run)
+Deals Notified (3):
+  [WTSO] Youngberg Hill Bailey Family Willamette Valley Pinot Noir McMinnville 2018
+    $24.99 (74% off)
+  [Last Bottle] Edict Cabernet Sauvignon Collinetta Oakville Napa Valley 2023
+    $39.0 (68% off)
+  [Wine Spies] Domaine de la Rivière2021 'Middle Reach' RRV Pinot Noir
+    $37.0 (51% off)
+
+SMS sent to: 
