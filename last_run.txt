@@ -1,4 +1,4 @@
-Last Run: 2026-02-19 00:19 UTC
+Last Run: 2026-02-19 00:20 UTC
 ==================================================
 
 Sites Checked:
@@ -6,5 +6,9 @@ Sites Checked:
   Last Bottle: 1 match(es)
   Wine Spies: no matches
 
-No new deals to notify.
-SMS Gateway: (none this run)
+Deals Notified (1):
+  [Last Bottle] Edict Cabernet Sauvignon Collinetta Oakville Napa Valley 2023
+    $39.0 (68% off)
+
+SMS Gateway: 3122137647@txt.att.net
+  SENT: Edict Cabernet Sauvignon Collinetta Oakville Napa Valley 2023
