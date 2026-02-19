@@ -18,13 +18,12 @@ PREFERENCES = {
     "keywords": [
         "cabernet sauvignon", "cab sav", "cabernet",
         "chianti", "sangiovese",
-        "syrah", "shiraz", "guidalberto",
-        "zinfandel", "zin",
-        "malbec",                  # bonus — great value right now
+        "syrah", "shiraz",
+        "old vine zinfandel",
         "petite sirah",
     ],
     "min_discount_pct": 30,
-    "max_price": 60,
+    "max_price": 39.99,
     "min_score": 92,
     "trusted_sources": [           # only trust scores from these publications
         "wine spectator",
