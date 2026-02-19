@@ -19,7 +19,7 @@ from datetime import datetime
 PREFERENCES = {
     "keywords": [
         "cabernet sauvignon", "cab sav", "cabernet",
-        "chianti", "sangiovese", "pinot noir",
+        "chianti", "sangiovese",
         "syrah", "shiraz", "guidalberto",
         "zinfandel", "zin",
         "malbec",                  # bonus — great value right now
@@ -81,12 +81,14 @@ def wine_key(deal):
 
 
 def send_sms(deals):
-    """Send deals via email-to-SMS gateway (free, no account needed)."""
+    """Send deals via email-to-SMS gateway. Returns list of status dicts."""
+    sms_results = []
     if not all([GMAIL_USER, GMAIL_PASS, PHONE_SMS]):
         print("⚠️  SMS credentials not set — printing deals only")
         for d in deals:
             print(f"  🍷 {d['name']} | ${d['price']} ({d['discount']}% off) | {d['url']}")
-        return
+            sms_results.append({"name": d["name"], "status": "SKIPPED", "error": "credentials not set"})
+        return sms_results
 
     for deal in deals[:3]:  # SMS is short — limit to top 3
         score_line = ""
@@ -111,8 +113,11 @@ def send_sms(deals):
                 server.login(GMAIL_USER, GMAIL_PASS)
                 server.sendmail(GMAIL_USER, PHONE_SMS, msg.as_string())
             print(f"✅ SMS sent: {deal['name']}")
+            sms_results.append({"name": deal["name"], "status": "SENT"})
         except Exception as e:
             print(f"❌ SMS failed: {e}")
+            sms_results.append({"name": deal["name"], "status": "FAILED", "error": str(e)})
+    return sms_results
 
 
 def matches_preferences(name, price, original_price, scores=None):
@@ -391,7 +396,7 @@ def scrape_winespies():
     return deals
 
 
-def write_run_log(timestamp, site_results, new_deals, sms_target):
+def write_run_log(timestamp, site_results, new_deals, sms_target, sms_results=None):
     """Write a log of the last run to last_run.txt (overwritten each run)."""
     lines = []
     lines.append(f"Last Run: {timestamp}")
@@ -410,10 +415,16 @@ def write_run_log(timestamp, site_results, new_deals, sms_target):
             lines.append(f"  [{d['source']}] {d['name']}")
             lines.append(f"    ${d['price']} ({d['discount']}% off)")
         lines.append("")
-        lines.append(f"SMS sent to: {sms_target}")
+        lines.append(f"SMS Gateway: {sms_target}")
+        if sms_results:
+            for sr in sms_results:
+                error_info = f" — {sr['error']}" if sr.get("error") else ""
+                lines.append(f"  {sr['status']}: {sr['name']}{error_info}")
+        else:
+            lines.append("  (no SMS results recorded)")
     else:
         lines.append("No new deals to notify.")
-        lines.append(f"SMS sent to: (none this run)")
+        lines.append(f"SMS Gateway: (none this run)")
     lines.append("")
     with open("last_run.txt", "w") as f:
         f.write("\n".join(lines))
@@ -448,13 +459,14 @@ def main():
     already_notified = load_notified()
     new_deals = [d for d in all_deals if wine_key(d) not in already_notified]
 
+    sms_results = []
     if new_deals:
         print(f"\n🎉 Found {len(new_deals)} new deal(s)! ({len(all_deals) - len(new_deals)} already notified today)")
         for d in new_deals:
             print(f"  [{d['source']}] {d['name']}")
             print(f"    ${d['price']} (was ${d['original']}, {d['discount']}% off)")
             print(f"    {d['url']}\n")
-        send_sms(new_deals)
+        sms_results = send_sms(new_deals)
 
         # Mark these wines as notified
         already_notified.extend(wine_key(d) for d in new_deals)
@@ -465,7 +477,7 @@ def main():
         print("😴 No deals matching your preferences right now. Will check again in 30 min.")
 
     # Write run log
-    write_run_log(timestamp, site_results, new_deals, PHONE_SMS)
+    write_run_log(timestamp, site_results, new_deals, PHONE_SMS, sms_results)
 
 
 if __name__ == "__main__":
