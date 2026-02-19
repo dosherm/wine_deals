@@ -1,4 +1,4 @@
-Last Run: 2026-02-19 16:28 UTC
+Last Run: 2026-02-19 17:33 UTC
 ==================================================
 
 Sites Checked:
@@ -6,4 +6,9 @@ Sites Checked:
   Last Bottle: 1 match(es)
   Wine Spies: 1 match(es)
 
-No new deals to notify.
+Deals Notified (1):
+  [Wine Spies] Hook & Ladder2021 Chalk Hill Estate Cabernet Sauvignon
+    $19.0 (50% off)
+
+Notification Status (ntfy.sh):
+  DELIVERED (HTTP 200): Hook & Ladder2021 Chalk Hill Estate Cabernet Sauvignon
