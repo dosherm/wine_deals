@@ -1,4 +1,4 @@
-Last Run: 2026-02-19 14:12 UTC
+Last Run: 2026-02-19 15:24 UTC
 ==================================================
 
 Sites Checked:
@@ -6,9 +6,4 @@ Sites Checked:
   Last Bottle: 1 match(es)
   Wine Spies: 1 match(es)
 
-Deals Notified (1):
-  [Wine Spies] Paulista2008 Oakville Cabernet Sauvignon
-    $25.0 (74% off)
-
-Notification Status (ntfy.sh):
-  DELIVERED (HTTP 200): Paulista2008 Oakville Cabernet Sauvignon
+No new deals to notify.
