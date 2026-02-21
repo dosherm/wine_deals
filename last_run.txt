@@ -1,4 +1,4 @@
-Last Run: 2026-02-21 16:40 UTC
+Last Run: 2026-02-21 17:33 UTC
 ==================================================
 
 Sites Checked:
@@ -6,9 +6,4 @@ Sites Checked:
   Last Bottle: no matches
   Wine Spies: no matches
 
-Deals Notified (1):
-  [WTSO] Calluna Estate Cabernet Sauvignon Chalk Hill 2018
-    $24.99 (67% off)
-
-Notification Status (ntfy.sh):
-  DELIVERED (HTTP 200): Calluna Estate Cabernet Sauvignon Chalk Hill 2018
+No new deals to notify.
