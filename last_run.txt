@@ -1,9 +1,14 @@
-Last Run: 2026-02-24 19:51 UTC
+Last Run: 2026-02-24 20:47 UTC
 ==================================================
 
 Sites Checked:
   WTSO: no matches
-  Last Bottle: no matches
+  Last Bottle: 1 match(es)
   Wine Spies: no matches
 
-No new deals to notify.
+Deals Notified (1):
+  [Last Bottle] Beringer Cabernet Sauvignon Reserve Knights Valley Vineyard Knights Valley 2021
+    $28.0 (60% off)
+
+Notification Status (ntfy.sh):
+  DELIVERED (HTTP 200): Beringer Cabernet Sauvignon Reserve Knights Valley Vineyard Knights Valley 2021
