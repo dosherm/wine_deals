@@ -1,9 +1,14 @@
-Last Run: 2026-02-25 15:34 UTC
+Last Run: 2026-02-25 17:15 UTC
 ==================================================
 
 Sites Checked:
-  WTSO: no matches
+  WTSO: 1 match(es)
   Last Bottle: 1 match(es)
   Wine Spies: no matches
 
-No new deals to notify.
+Deals Notified (1):
+  [WTSO] Adeptos Stags Leap District Cabernet Sauvignon Napa Valley 2023
+    $29.99 (81% off)
+
+Notification Status (ntfy.sh):
+  DELIVERED (HTTP 200): Adeptos Stags Leap District Cabernet Sauvignon Napa Valley 2023
