@@ -1,9 +1,14 @@
-Last Run: 2026-02-27 02:46 UTC
+Last Run: 2026-02-27 14:02 UTC
 ==================================================
 
 Sites Checked:
   WTSO: no matches
   Last Bottle: no matches
-  Wine Spies: no matches
+  Wine Spies: 1 match(es)
 
-No new deals to notify.
+Deals Notified (1):
+  [Wine Spies] Dossier2022 Columbia Valley Cabernet Blend
+    $27.0 (55% off)
+
+Notification Status (ntfy.sh):
+  DELIVERED (HTTP 200): Dossier2022 Columbia Valley Cabernet Blend
