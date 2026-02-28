@@ -1,4 +1,4 @@
-Last Run: 2026-02-28 16:36 UTC
+Last Run: 2026-02-28 17:28 UTC
 ==================================================
 
 Sites Checked:
@@ -6,9 +6,4 @@ Sites Checked:
   Last Bottle: no matches
   Wine Spies: no matches
 
-Deals Notified (1):
-  [WTSO] 94 Pt. Saint Veeder Mt Veeder Revelation Block Cabernet Sauvignon 2023
-    $29.99 (81% off)
-
-Notification Status (ntfy.sh):
-  DELIVERED (HTTP 200): 94 Pt. Saint Veeder Mt Veeder Revelation Block Cabernet Sauvignon 2023
+No new deals to notify.
