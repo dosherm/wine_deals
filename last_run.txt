@@ -1,9 +1,14 @@
-Last Run: 2026-03-01 16:39 UTC
+Last Run: 2026-03-01 17:30 UTC
 ==================================================
 
 Sites Checked:
-  WTSO: no matches
+  WTSO: 1 match(es)
   Last Bottle: no matches
   Wine Spies: no matches
 
-No new deals to notify.
+Deals Notified (1):
+  [WTSO] 93 Pt. Oakville Crossing Assemblage Cabernet Sauvignon Oakville 2023
+    $29.99 (83% off)
+
+Notification Status (ntfy.sh):
+  DELIVERED (HTTP 200): 93 Pt. Oakville Crossing Assemblage Cabernet Sauvignon Oakville 2023
