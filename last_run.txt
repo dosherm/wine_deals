@@ -1,4 +1,4 @@
-Last Run: 2026-03-03 17:24 UTC
+Last Run: 2026-03-03 18:07 UTC
 ==================================================
 
 Sites Checked:
@@ -6,9 +6,4 @@ Sites Checked:
   Last Bottle: 1 match(es)
   Wine Spies: no matches
 
-Deals Notified (1):
-  [WTSO] 94 Pt. Royal Prince Reserve Cabernet Sauvignon Napa Valley 2021
-    $34.99 (63% off)
-
-Notification Status (ntfy.sh):
-  DELIVERED (HTTP 200): 94 Pt. Royal Prince Reserve Cabernet Sauvignon Napa Valley 2021
+No new deals to notify.
