@@ -1,9 +1,17 @@
-Last Run: 2026-03-02 23:35 UTC
+Last Run: 2026-03-03 02:51 UTC
 ==================================================
 
 Sites Checked:
-  WTSO: no matches
+  WTSO: 1 match(es)
   Last Bottle: 1 match(es)
   Wine Spies: no matches
 
-No new deals to notify.
+Deals Notified (2):
+  [WTSO] Pine and Brown Spring Mountain Cabernet Sauvignon Reserve 2023
+    $32.99 (74% off)
+  [Last Bottle] Amor Fati Syrah Santa Maria Valley 2023
+    $19.0 (72% off)
+
+Notification Status (ntfy.sh):
+  DELIVERED (HTTP 200): Pine and Brown Spring Mountain Cabernet Sauvignon Reserve 2023
+  DELIVERED (HTTP 200): Amor Fati Syrah Santa Maria Valley 2023
