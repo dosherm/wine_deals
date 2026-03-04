@@ -1,14 +1,17 @@
-Last Run: 2026-03-04 02:44 UTC
+Last Run: 2026-03-04 14:01 UTC
 ==================================================
 
 Sites Checked:
   WTSO: 1 match(es)
-  Last Bottle: no matches
+  Last Bottle: 1 match(es)
   Wine Spies: no matches
 
-Deals Notified (1):
-  [WTSO] 92 Pt. Pacheco Pereda Linaje Malbec-Cabernet Franc 2021 Mendoza
-    $16.99 (64% off)
+Deals Notified (2):
+  [Last Bottle] Beaulieu Vineyards BV Cabernet Sauvignon Napa Valley 2022
+    $24.0 (40% off)
+  [WTSO] BACA Wines by Hall Napa Valley Cabernet Sauvignon 2023
+    $24.99 (38% off)
 
 Notification Status (ntfy.sh):
-  DELIVERED (HTTP 200): 92 Pt. Pacheco Pereda Linaje Malbec-Cabernet Franc 2021 Mendoza
+  DELIVERED (HTTP 200): Beaulieu Vineyards BV Cabernet Sauvignon Napa Valley 2022
+  DELIVERED (HTTP 200): BACA Wines by Hall Napa Valley Cabernet Sauvignon 2023
