@@ -1,9 +1,14 @@
-Last Run: 2026-03-03 23:35 UTC
+Last Run: 2026-03-04 02:44 UTC
 ==================================================
 
 Sites Checked:
-  WTSO: no matches
+  WTSO: 1 match(es)
   Last Bottle: no matches
   Wine Spies: no matches
 
-No new deals to notify.
+Deals Notified (1):
+  [WTSO] 92 Pt. Pacheco Pereda Linaje Malbec-Cabernet Franc 2021 Mendoza
+    $16.99 (64% off)
+
+Notification Status (ntfy.sh):
+  DELIVERED (HTTP 200): 92 Pt. Pacheco Pereda Linaje Malbec-Cabernet Franc 2021 Mendoza
