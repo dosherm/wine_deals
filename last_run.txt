@@ -1,9 +1,14 @@
-Last Run: 2026-03-05 02:47 UTC
+Last Run: 2026-03-05 14:04 UTC
 ==================================================
 
 Sites Checked:
   WTSO: no matches
   Last Bottle: no matches
-  Wine Spies: no matches
+  Wine Spies: 1 match(es)
 
-No new deals to notify.
+Deals Notified (1):
+  [Wine Spies] GrapeHeart Vineyards2022 Estate Reserve Petite Sirah
+    $26.0 (60% off)
+
+Notification Status (ntfy.sh):
+  DELIVERED (HTTP 200): GrapeHeart Vineyards2022 Estate Reserve Petite Sirah
