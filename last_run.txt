@@ -1,4 +1,4 @@
-Last Run: 2026-03-07 02:37 UTC
+Last Run: 2026-03-07 13:42 UTC
 ==================================================
 
 Sites Checked:
@@ -7,8 +7,8 @@ Sites Checked:
   Wine Spies: no matches
 
 Deals Notified (1):
-  [WTSO] Grand Napa Vineyards Stags Leap District Cabernet Sauvignon 2021
-    $39.99 (70% off)
+  [WTSO] 93 Pt. MacLaren Timbervine Ranch Vineyard Syrah Russian River Valley 2018
+    $19.99 (71% off)
 
 Notification Status (ntfy.sh):
-  DELIVERED (HTTP 200): Grand Napa Vineyards Stags Leap District Cabernet Sauvignon 2021
+  DELIVERED (HTTP 200): 93 Pt. MacLaren Timbervine Ranch Vineyard Syrah Russian River Valley 2018
