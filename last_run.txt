@@ -1,4 +1,4 @@
-Last Run: 2026-03-07 13:42 UTC
+Last Run: 2026-03-07 14:32 UTC
 ==================================================
 
 Sites Checked:
@@ -6,9 +6,4 @@ Sites Checked:
   Last Bottle: no matches
   Wine Spies: no matches
 
-Deals Notified (1):
-  [WTSO] 93 Pt. MacLaren Timbervine Ranch Vineyard Syrah Russian River Valley 2018
-    $19.99 (71% off)
-
-Notification Status (ntfy.sh):
-  DELIVERED (HTTP 200): 93 Pt. MacLaren Timbervine Ranch Vineyard Syrah Russian River Valley 2018
+No new deals to notify.
