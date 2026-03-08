@@ -1,14 +1,14 @@
-Last Run: 2026-03-08 02:51 UTC
+Last Run: 2026-03-08 13:44 UTC
 ==================================================
 
 Sites Checked:
   WTSO: no matches
   Last Bottle: 1 match(es)
-  Wine Spies: no matches
+  Wine Spies: 1 match(es)
 
 Deals Notified (1):
-  [Last Bottle] The Ablaze Cabernet Sauvignon Paso Robles 2022
-    $18.0 (72% off)
+  [Wine Spies] Vincent Vineyards2019 'Family Reserve' Cabernet Sauvignon
+    $19.0 (75% off)
 
 Notification Status (ntfy.sh):
-  DELIVERED (HTTP 200): The Ablaze Cabernet Sauvignon Paso Robles 2022
+  DELIVERED (HTTP 200): Vincent Vineyards2019 'Family Reserve' Cabernet Sauvignon
