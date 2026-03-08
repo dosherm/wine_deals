@@ -1,4 +1,4 @@
-Last Run: 2026-03-07 23:31 UTC
+Last Run: 2026-03-08 02:51 UTC
 ==================================================
 
 Sites Checked:
@@ -6,4 +6,9 @@ Sites Checked:
   Last Bottle: 1 match(es)
   Wine Spies: no matches
 
-No new deals to notify.
+Deals Notified (1):
+  [Last Bottle] The Ablaze Cabernet Sauvignon Paso Robles 2022
+    $18.0 (72% off)
+
+Notification Status (ntfy.sh):
+  DELIVERED (HTTP 200): The Ablaze Cabernet Sauvignon Paso Robles 2022
