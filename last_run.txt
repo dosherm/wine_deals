@@ -1,14 +1,9 @@
-Last Run: 2026-03-09 02:52 UTC
+Last Run: 2026-03-09 14:09 UTC
 ==================================================
 
 Sites Checked:
   WTSO: no matches
   Last Bottle: no matches
-  Wine Spies: 1 match(es)
+  Wine Spies: no matches
 
-Deals Notified (1):
-  [Wine Spies] Vincent Vineyards2019 'Family Reserve' Cabernet Sauvignon
-    $19.0 (75% off)
-
-Notification Status (ntfy.sh):
-  DELIVERED (HTTP 200): Vincent Vineyards2019 'Family Reserve' Cabernet Sauvignon
+No new deals to notify.
