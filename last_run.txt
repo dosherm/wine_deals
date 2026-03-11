@@ -1,4 +1,4 @@
-Last Run: 2026-03-11 16:28 UTC
+Last Run: 2026-03-11 17:30 UTC
 ==================================================
 
 Sites Checked:
@@ -6,9 +6,4 @@ Sites Checked:
   Last Bottle: no matches
   Wine Spies: no matches
 
-Deals Notified (1):
-  [WTSO] 93 Pt. Saint Veeder Mt Veeder Founders Reserve Cabernet Sauvignon 2023
-    $29.99 (84% off)
-
-Notification Status (ntfy.sh):
-  DELIVERED (HTTP 200): 93 Pt. Saint Veeder Mt Veeder Founders Reserve Cabernet Sauvignon 2023
+No new deals to notify.
