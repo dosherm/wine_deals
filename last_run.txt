@@ -1,4 +1,4 @@
-Last Run: 2026-03-12 02:48 UTC
+Last Run: 2026-03-12 14:06 UTC
 ==================================================
 
 Sites Checked:
@@ -6,9 +6,4 @@ Sites Checked:
   Last Bottle: 1 match(es)
   Wine Spies: no matches
 
-Deals Notified (1):
-  [Last Bottle] Tempus Fugit Cabernet Sauvignon Napa Valley 2024
-    $28.0 (72% off)
-
-Notification Status (ntfy.sh):
-  DELIVERED (HTTP 200): Tempus Fugit Cabernet Sauvignon Napa Valley 2024
+No new deals to notify.
