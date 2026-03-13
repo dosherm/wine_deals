@@ -1,4 +1,4 @@
-Last Run: 2026-03-13 14:03 UTC
+Last Run: 2026-03-13 15:11 UTC
 ==================================================
 
 Sites Checked:
@@ -6,9 +6,4 @@ Sites Checked:
   Last Bottle: no matches
   Wine Spies: no matches
 
-Deals Notified (1):
-  [WTSO] Pine and Brown Diamond Mountain Cabernet Sauvignon 2023
-    $29.99 (75% off)
-
-Notification Status (ntfy.sh):
-  DELIVERED (HTTP 200): Pine and Brown Diamond Mountain Cabernet Sauvignon 2023
+No new deals to notify.
