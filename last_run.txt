@@ -1,9 +1,14 @@
-Last Run: 2026-03-14 18:52 UTC
+Last Run: 2026-03-14 19:34 UTC
 ==================================================
 
 Sites Checked:
   WTSO: no matches
-  Last Bottle: no matches
+  Last Bottle: 1 match(es)
   Wine Spies: no matches
 
-No new deals to notify.
+Deals Notified (1):
+  [Last Bottle] Macedon X Decade Cabernet Sauvignon Red Hills Lake County 2022
+    $15.0 (83% off)
+
+Notification Status (ntfy.sh):
+  DELIVERED (HTTP 200): Macedon X Decade Cabernet Sauvignon Red Hills Lake County 2022
