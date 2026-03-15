@@ -1,9 +1,14 @@
-Last Run: 2026-03-15 15:36 UTC
+Last Run: 2026-03-15 16:41 UTC
 ==================================================
 
 Sites Checked:
-  WTSO: no matches
+  WTSO: 1 match(es)
   Last Bottle: 1 match(es)
   Wine Spies: no matches
 
-No new deals to notify.
+Deals Notified (1):
+  [WTSO] 93 Pt. Domaine Terlato and Chapoutier S-Block Shiraz 2018
+    $16.99 (59% off)
+
+Notification Status (ntfy.sh):
+  DELIVERED (HTTP 200): 93 Pt. Domaine Terlato and Chapoutier S-Block Shiraz 2018
