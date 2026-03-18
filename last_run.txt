@@ -1,4 +1,4 @@
-Last Run: 2026-03-18 02:55 UTC
+Last Run: 2026-03-18 14:24 UTC
 ==================================================
 
 Sites Checked:
@@ -6,9 +6,4 @@ Sites Checked:
   Last Bottle: 1 match(es)
   Wine Spies: no matches
 
-Deals Notified (1):
-  [Last Bottle] Due Fontane Cabernet Sauvignon Alexander Valley 2022
-    $29.0 (66% off)
-
-Notification Status (ntfy.sh):
-  DELIVERED (HTTP 200): Due Fontane Cabernet Sauvignon Alexander Valley 2022
+No new deals to notify.
