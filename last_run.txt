@@ -1,9 +1,14 @@
-Last Run: 2026-03-22 03:14 UTC
+Last Run: 2026-03-22 13:49 UTC
 ==================================================
 
 Sites Checked:
-  WTSO: no matches
+  WTSO: 1 match(es)
   Last Bottle: no matches
   Wine Spies: no matches
 
-No new deals to notify.
+Deals Notified (1):
+  [WTSO] Decoy by Duckhorn Limited Napa Valley Cabernet Sauvignon 2023
+    $29.99 (33% off)
+
+Notification Status (ntfy.sh):
+  DELIVERED (HTTP 200): Decoy by Duckhorn Limited Napa Valley Cabernet Sauvignon 2023
