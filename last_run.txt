@@ -1,9 +1,14 @@
-Last Run: 2026-03-29 03:27 UTC
+Last Run: 2026-03-29 13:56 UTC
 ==================================================
 
 Sites Checked:
-  WTSO: no matches
+  WTSO: 1 match(es)
   Last Bottle: no matches
   Wine Spies: no matches
 
-No new deals to notify.
+Deals Notified (1):
+  [WTSO] 95 Pt. Backstage Winery Napa Valley Cabernet Sauvignon Soprano Vineyard 2021
+    $27.99 (81% off)
+
+Notification Status (ntfy.sh):
+  DELIVERED (HTTP 200): 95 Pt. Backstage Winery Napa Valley Cabernet Sauvignon Soprano Vineyard 2021
