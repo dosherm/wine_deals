@@ -1,4 +1,4 @@
-Last Run: 2026-03-30 16:09 UTC
+Last Run: 2026-03-30 17:30 UTC
 ==================================================
 
 Sites Checked:
@@ -6,9 +6,4 @@ Sites Checked:
   Last Bottle: no matches
   Wine Spies: no matches
 
-Deals Notified (1):
-  [WTSO] 93 Pt. Eco Terreno Wines Alexander Valley Cabernet Sauvignon Otoño 2018
-    $19.99 (73% off)
-
-Notification Status (ntfy.sh):
-  DELIVERED (HTTP 200): 93 Pt. Eco Terreno Wines Alexander Valley Cabernet Sauvignon Otoño 2018
+No new deals to notify.
