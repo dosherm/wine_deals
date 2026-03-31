@@ -1,9 +1,14 @@
-Last Run: 2026-03-31 03:21 UTC
+Last Run: 2026-03-31 14:41 UTC
 ==================================================
 
 Sites Checked:
-  WTSO: no matches
+  WTSO: 1 match(es)
   Last Bottle: no matches
   Wine Spies: no matches
 
-No new deals to notify.
+Deals Notified (1):
+  [WTSO] 94 Pt. Story of Soil Donnachadh Vineyard Syrah Sta. Rita Hills 2023
+    $24.99 (55% off)
+
+Notification Status (ntfy.sh):
+  DELIVERED (HTTP 200): 94 Pt. Story of Soil Donnachadh Vineyard Syrah Sta. Rita Hills 2023
