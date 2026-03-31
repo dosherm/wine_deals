@@ -1,4 +1,4 @@
-Last Run: 2026-03-31 14:41 UTC
+Last Run: 2026-03-31 16:10 UTC
 ==================================================
 
 Sites Checked:
@@ -7,8 +7,8 @@ Sites Checked:
   Wine Spies: no matches
 
 Deals Notified (1):
-  [WTSO] 94 Pt. Story of Soil Donnachadh Vineyard Syrah Sta. Rita Hills 2023
-    $24.99 (55% off)
+  [WTSO] No Love Lost Napa Valley Cabernet Sauvignon 2023
+    $19.99 (67% off)
 
 Notification Status (ntfy.sh):
-  DELIVERED (HTTP 200): 94 Pt. Story of Soil Donnachadh Vineyard Syrah Sta. Rita Hills 2023
+  DELIVERED (HTTP 200): No Love Lost Napa Valley Cabernet Sauvignon 2023
