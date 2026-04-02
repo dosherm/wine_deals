@@ -1,4 +1,4 @@
-Last Run: 2026-04-02 00:02 UTC
+Last Run: 2026-04-02 03:33 UTC
 ==================================================
 
 Sites Checked:
@@ -6,9 +6,4 @@ Sites Checked:
   Last Bottle: 1 match(es)
   Wine Spies: no matches
 
-Deals Notified (1):
-  [Last Bottle] Tenshen Cabernet Sauvignon Paso Robles 2022
-    $12.0 (52% off)
-
-Notification Status (ntfy.sh):
-  DELIVERED (HTTP 200): Tenshen Cabernet Sauvignon Paso Robles 2022
+No new deals to notify.
