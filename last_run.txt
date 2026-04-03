@@ -1,14 +1,9 @@
-Last Run: 2026-04-03 03:19 UTC
+Last Run: 2026-04-03 14:04 UTC
 ==================================================
 
 Sites Checked:
   WTSO: no matches
   Last Bottle: no matches
-  Wine Spies: 1 match(es)
+  Wine Spies: no matches
 
-Deals Notified (1):
-  [Wine Spies] Guarachi2022 'G' Napa Valley Cabernet Blend
-    $35.0 (61% off)
-
-Notification Status (ntfy.sh):
-  DELIVERED (HTTP 200): Guarachi2022 'G' Napa Valley Cabernet Blend
+No new deals to notify.
