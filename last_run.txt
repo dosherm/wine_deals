@@ -1,14 +1,9 @@
-Last Run: 2026-04-03 18:03 UTC
+Last Run: 2026-04-03 19:22 UTC
 ==================================================
 
 Sites Checked:
   WTSO: 1 match(es)
-  Last Bottle: 1 match(es)
+  Last Bottle: no matches
   Wine Spies: no matches
 
-Deals Notified (1):
-  [Last Bottle] Rudius Cabernet Sauvignon Diamond Mountain Napa Valley 2023
-    $39.0 (70% off)
-
-Notification Status (ntfy.sh):
-  DELIVERED (HTTP 200): Rudius Cabernet Sauvignon Diamond Mountain Napa Valley 2023
+No new deals to notify.
