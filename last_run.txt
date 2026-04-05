@@ -1,4 +1,4 @@
-Last Run: 2026-04-05 13:57 UTC
+Last Run: 2026-04-05 14:47 UTC
 ==================================================
 
 Sites Checked:
@@ -6,9 +6,4 @@ Sites Checked:
   Last Bottle: no matches
   Wine Spies: 1 match(es)
 
-Deals Notified (1):
-  [Wine Spies] Black Powder2022 Napa Valley Cabernet Sauvignon
-    $25.0 (55% off)
-
-Notification Status (ntfy.sh):
-  DELIVERED (HTTP 200): Black Powder2022 Napa Valley Cabernet Sauvignon
+No new deals to notify.
