@@ -1,4 +1,4 @@
-Last Run: 2026-04-06 20:49 UTC
+Last Run: 2026-04-06 21:46 UTC
 ==================================================
 
 Sites Checked:
@@ -6,9 +6,4 @@ Sites Checked:
   Last Bottle: 1 match(es)
   Wine Spies: no matches
 
-Deals Notified (1):
-  [Last Bottle] Guarachi Cabernet Sauvignon Meadowrock Vineyard Atlas Peak Napa Valley 2023
-    $39.0 (65% off)
-
-Notification Status (ntfy.sh):
-  DELIVERED (HTTP 200): Guarachi Cabernet Sauvignon Meadowrock Vineyard Atlas Peak Napa Valley 2023
+No new deals to notify.
