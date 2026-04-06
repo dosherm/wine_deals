@@ -1,9 +1,14 @@
-Last Run: 2026-04-06 15:25 UTC
+Last Run: 2026-04-06 16:10 UTC
 ==================================================
 
 Sites Checked:
-  WTSO: no matches
+  WTSO: 1 match(es)
   Last Bottle: no matches
   Wine Spies: no matches
 
-No new deals to notify.
+Deals Notified (1):
+  [WTSO] Liquid Sky Moon Mountain Cabernet Sauvignon 2021
+    $29.99 (67% off)
+
+Notification Status (ntfy.sh):
+  DELIVERED (HTTP 200): Liquid Sky Moon Mountain Cabernet Sauvignon 2021
