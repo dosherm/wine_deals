@@ -1,14 +1,9 @@
-Last Run: 2026-04-06 03:32 UTC
+Last Run: 2026-04-06 14:13 UTC
 ==================================================
 
 Sites Checked:
-  WTSO: 1 match(es)
+  WTSO: no matches
   Last Bottle: no matches
   Wine Spies: no matches
 
-Deals Notified (1):
-  [WTSO] 93 Pt. Eco Terreno Wines Alexander Valley Old Vine Cabernet 2017
-    $19.99 (73% off)
-
-Notification Status (ntfy.sh):
-  DELIVERED (HTTP 200): 93 Pt. Eco Terreno Wines Alexander Valley Old Vine Cabernet 2017
+No new deals to notify.
