@@ -1,4 +1,4 @@
-Last Run: 2026-04-07 14:47 UTC
+Last Run: 2026-04-07 16:14 UTC
 ==================================================
 
 Sites Checked:
@@ -6,9 +6,4 @@ Sites Checked:
   Last Bottle: 1 match(es)
   Wine Spies: 1 match(es)
 
-Deals Notified (1):
-  [Wine Spies] Arcana2023 Napa Valley Cabernet Sauvignon
-    $25.0 (80% off)
-
-Notification Status (ntfy.sh):
-  DELIVERED (HTTP 200): Arcana2023 Napa Valley Cabernet Sauvignon
+No new deals to notify.
