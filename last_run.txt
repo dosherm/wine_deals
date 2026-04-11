@@ -1,4 +1,4 @@
-Last Run: 2026-04-11 19:44 UTC
+Last Run: 2026-04-11 20:44 UTC
 ==================================================
 
 Sites Checked:
@@ -6,9 +6,4 @@ Sites Checked:
   Last Bottle: 1 match(es)
   Wine Spies: no matches
 
-Deals Notified (1):
-  [Last Bottle] Cerro Cabernet Sauvignon Napa Valley 2021
-    $25.0 (75% off)
-
-Notification Status (ntfy.sh):
-  DELIVERED (HTTP 200): Cerro Cabernet Sauvignon Napa Valley 2021
+No new deals to notify.
