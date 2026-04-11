@@ -1,9 +1,14 @@
-Last Run: 2026-04-10 23:05 UTC
+Last Run: 2026-04-11 00:01 UTC
 ==================================================
 
 Sites Checked:
-  WTSO: no matches
+  WTSO: 1 match(es)
   Last Bottle: no matches
   Wine Spies: no matches
 
-No new deals to notify.
+Deals Notified (1):
+  [WTSO] 93 Pt. Handley Cellars Petite Sirah Mendocino County 2019
+    $17.99 (44% off)
+
+Notification Status (ntfy.sh):
+  DELIVERED (HTTP 200): 93 Pt. Handley Cellars Petite Sirah Mendocino County 2019
