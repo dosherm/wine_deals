@@ -1,4 +1,4 @@
-Last Run: 2026-04-11 22:41 UTC
+Last Run: 2026-04-11 23:45 UTC
 ==================================================
 
 Sites Checked:
@@ -6,4 +6,9 @@ Sites Checked:
   Last Bottle: 1 match(es)
   Wine Spies: no matches
 
-No new deals to notify.
+Deals Notified (1):
+  [Last Bottle] Shipyard Acres Cabernet Sauvignon Napa Valley 2022
+    $35.0 (64% off)
+
+Notification Status (ntfy.sh):
+  DELIVERED (HTTP 200): Shipyard Acres Cabernet Sauvignon Napa Valley 2022
