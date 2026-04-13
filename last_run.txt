@@ -1,14 +1,9 @@
-Last Run: 2026-04-13 17:39 UTC
+Last Run: 2026-04-13 19:24 UTC
 ==================================================
 
 Sites Checked:
   WTSO: 1 match(es)
-  Last Bottle: 1 match(es)
+  Last Bottle: no matches
   Wine Spies: no matches
 
-Deals Notified (1):
-  [Last Bottle] Dylan's Ghost Cabernet Sauvignon Stags Leap District Napa Valley 2023
-    $39.0 (70% off)
-
-Notification Status (ntfy.sh):
-  DELIVERED (HTTP 200): Dylan's Ghost Cabernet Sauvignon Stags Leap District Napa Valley 2023
+No new deals to notify.
