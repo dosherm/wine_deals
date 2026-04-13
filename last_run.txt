@@ -1,9 +1,14 @@
-Last Run: 2026-04-13 03:59 UTC
+Last Run: 2026-04-13 14:53 UTC
 ==================================================
 
 Sites Checked:
-  WTSO: no matches
+  WTSO: 1 match(es)
   Last Bottle: no matches
   Wine Spies: no matches
 
-No new deals to notify.
+Deals Notified (1):
+  [WTSO] 95 Pt. Mira Winery Cabernet Sauvignon Schweizer Vineyard Stags Leap District Napa Valley 2017
+    $39.99 (0% off)
+
+Notification Status (ntfy.sh):
+  DELIVERED (HTTP 200): 95 Pt. Mira Winery Cabernet Sauvignon Schweizer Vineyard Stags Leap District Napa Valley 2017
