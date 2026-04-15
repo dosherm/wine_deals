@@ -1,4 +1,4 @@
-Last Run: 2026-04-15 14:48 UTC
+Last Run: 2026-04-15 16:11 UTC
 ==================================================
 
 Sites Checked:
@@ -6,9 +6,4 @@ Sites Checked:
   Last Bottle: no matches
   Wine Spies: no matches
 
-Deals Notified (1):
-  [WTSO] Firefly Vineyards Coombsville Cabernet Sauvignon Napa Valley 2012
-    $14.99 (0% off)
-
-Notification Status (ntfy.sh):
-  DELIVERED (HTTP 200): Firefly Vineyards Coombsville Cabernet Sauvignon Napa Valley 2012
+No new deals to notify.
