@@ -1,4 +1,4 @@
-Last Run: 2026-04-16 15:03 UTC
+Last Run: 2026-04-16 16:55 UTC
 ==================================================
 
 Sites Checked:
@@ -6,9 +6,4 @@ Sites Checked:
   Last Bottle: no matches
   Wine Spies: no matches
 
-Deals Notified (1):
-  [WTSO] 93 Pt. Dievole Chianti Classico Casanova 2021
-    $18.99 (0% off)
-
-Notification Status (ntfy.sh):
-  DELIVERED (HTTP 200): 93 Pt. Dievole Chianti Classico Casanova 2021
+No new deals to notify.
