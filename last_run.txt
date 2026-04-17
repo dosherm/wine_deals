@@ -1,4 +1,4 @@
-Last Run: 2026-04-17 14:22 UTC
+Last Run: 2026-04-17 15:38 UTC
 ==================================================
 
 Sites Checked:
@@ -6,9 +6,4 @@ Sites Checked:
   Last Bottle: no matches
   Wine Spies: no matches
 
-Deals Notified (1):
-  [WTSO] Stag's Leap Wine Cellars Soda Canyon Cabernet Sauvignon 2020
-    $39.99 (0% off)
-
-Notification Status (ntfy.sh):
-  DELIVERED (HTTP 200): Stag's Leap Wine Cellars Soda Canyon Cabernet Sauvignon 2020
+No new deals to notify.
