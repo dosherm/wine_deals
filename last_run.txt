@@ -1,4 +1,4 @@
-Last Run: 2026-04-18 14:03 UTC
+Last Run: 2026-04-18 15:09 UTC
 ==================================================
 
 Sites Checked:
@@ -6,9 +6,4 @@ Sites Checked:
   Last Bottle: no matches
   Wine Spies: 1 match(es)
 
-Deals Notified (1):
-  [Wine Spies] Mythical2023 Napa Valley Cabernet Sauvignon
-    $39.0 (70% off)
-
-Notification Status (ntfy.sh):
-  DELIVERED (HTTP 200): Mythical2023 Napa Valley Cabernet Sauvignon
+No new deals to notify.
