@@ -1,14 +1,14 @@
-Last Run: 2026-04-20 00:04 UTC
+Last Run: 2026-04-20 04:00 UTC
 ==================================================
 
 Sites Checked:
   WTSO: no matches
-  Last Bottle: no matches
+  Last Bottle: 1 match(es)
   Wine Spies: 1 match(es)
 
 Deals Notified (1):
-  [Wine Spies] Dossier2022 Columbia Valley Cabernet Blend
-    $27.0 (55% off)
+  [Last Bottle] Tenshen Cabernet Sauvignon Paso Robles 2022
+    $12.0 (52% off)
 
 Notification Status (ntfy.sh):
-  DELIVERED (HTTP 200): Dossier2022 Columbia Valley Cabernet Blend
+  DELIVERED (HTTP 200): Tenshen Cabernet Sauvignon Paso Robles 2022
