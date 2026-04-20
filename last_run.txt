@@ -1,8 +1,8 @@
-Last Run: 2026-04-20 20:10 UTC
+Last Run: 2026-04-20 21:25 UTC
 ==================================================
 
 Sites Checked:
-  WTSO: 1 match(es)
+  WTSO: no matches
   Last Bottle: no matches
   Wine Spies: 1 match(es)
 
