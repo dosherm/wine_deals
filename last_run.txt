@@ -1,4 +1,4 @@
-Last Run: 2026-04-20 14:55 UTC
+Last Run: 2026-04-20 16:18 UTC
 ==================================================
 
 Sites Checked:
@@ -6,12 +6,4 @@ Sites Checked:
   Last Bottle: 1 match(es)
   Wine Spies: 1 match(es)
 
-Deals Notified (2):
-  [Wine Spies] Medlock Ames2021 Bell Mountain Estate Cabernet Sauvignon
-    $35.0 (50% off)
-  [WTSO] Havens Winery Yountville Napa Valley Cabernet Sauvignon 2022
-    $19.99 (0% off)
-
-Notification Status (ntfy.sh):
-  DELIVERED (HTTP 200): Medlock Ames2021 Bell Mountain Estate Cabernet Sauvignon
-  DELIVERED (HTTP 200): Havens Winery Yountville Napa Valley Cabernet Sauvignon 2022
+No new deals to notify.
