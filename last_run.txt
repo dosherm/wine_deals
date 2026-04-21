@@ -1,4 +1,4 @@
-Last Run: 2026-04-21 00:08 UTC
+Last Run: 2026-04-21 03:53 UTC
 ==================================================
 
 Sites Checked:
@@ -6,9 +6,4 @@ Sites Checked:
   Last Bottle: no matches
   Wine Spies: 1 match(es)
 
-Deals Notified (1):
-  [Wine Spies] Medlock Ames2021 Bell Mountain Estate Cabernet Sauvignon
-    $35.0 (50% off)
-
-Notification Status (ntfy.sh):
-  DELIVERED (HTTP 200): Medlock Ames2021 Bell Mountain Estate Cabernet Sauvignon
+No new deals to notify.
