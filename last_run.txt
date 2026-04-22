@@ -1,9 +1,14 @@
-Last Run: 2026-04-21 23:09 UTC
+Last Run: 2026-04-22 00:03 UTC
 ==================================================
 
 Sites Checked:
   WTSO: no matches
-  Last Bottle: no matches
+  Last Bottle: 1 match(es)
   Wine Spies: no matches
 
-No new deals to notify.
+Deals Notified (1):
+  [Last Bottle] 8th Art Cabernet Sauvignon Napa Valley 2024
+    $29.0 (72% off)
+
+Notification Status (ntfy.sh):
+  DELIVERED (HTTP 200): 8th Art Cabernet Sauvignon Napa Valley 2024
