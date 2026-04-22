@@ -1,4 +1,4 @@
-Last Run: 2026-04-22 14:51 UTC
+Last Run: 2026-04-22 16:15 UTC
 ==================================================
 
 Sites Checked:
@@ -6,9 +6,4 @@ Sites Checked:
   Last Bottle: 1 match(es)
   Wine Spies: no matches
 
-Deals Notified (1):
-  [WTSO] 94 Pt. Atlas Peak Vineyards Atlas Peak Cabernet Sauvignon 2019
-    $27.99 (0% off)
-
-Notification Status (ntfy.sh):
-  DELIVERED (HTTP 200): 94 Pt. Atlas Peak Vineyards Atlas Peak Cabernet Sauvignon 2019
+No new deals to notify.
