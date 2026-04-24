@@ -1,14 +1,9 @@
-Last Run: 2026-04-24 20:09 UTC
+Last Run: 2026-04-24 21:27 UTC
 ==================================================
 
 Sites Checked:
-  WTSO: 1 match(es)
+  WTSO: no matches
   Last Bottle: 1 match(es)
   Wine Spies: no matches
 
-Deals Notified (1):
-  [Last Bottle] Mystery Cabernet Sauvignon Napa Valley 2022
-    $39.0 (48% off)
-
-Notification Status (ntfy.sh):
-  DELIVERED (HTTP 200): Mystery Cabernet Sauvignon Napa Valley 2022
+No new deals to notify.
