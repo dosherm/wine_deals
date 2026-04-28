@@ -1,4 +1,4 @@
-Last Run: 2026-04-27 22:59 UTC
+Last Run: 2026-04-28 00:01 UTC
 ==================================================
 
 Sites Checked:
@@ -6,4 +6,9 @@ Sites Checked:
   Last Bottle: 1 match(es)
   Wine Spies: no matches
 
-No new deals to notify.
+Deals Notified (1):
+  [Last Bottle] Sixteen by Twenty Cabernet Sauvignon Napa Valley 2019
+    $29.0 (61% off)
+
+Notification Status (ntfy.sh):
+  DELIVERED (HTTP 200): Sixteen by Twenty Cabernet Sauvignon Napa Valley 2019
