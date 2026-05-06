@@ -1,4 +1,4 @@
-Last Run: 2026-05-06 19:10 UTC
+Last Run: 2026-05-06 20:53 UTC
 ==================================================
 
 Sites Checked:
@@ -6,9 +6,4 @@ Sites Checked:
   Last Bottle: 1 match(es)
   Wine Spies: 1 match(es)
 
-Deals Notified (1):
-  [Last Bottle] La Coste de Los Andes Cabernet Franc Andillian Mendoza 2023
-    $16.0 (68% off)
-
-Notification Status (ntfy.sh):
-  DELIVERED (HTTP 200): La Coste de Los Andes Cabernet Franc Andillian Mendoza 2023
+No new deals to notify.
