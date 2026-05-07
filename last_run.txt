@@ -1,4 +1,4 @@
-Last Run: 2026-05-07 01:19 UTC
+Last Run: 2026-05-07 05:01 UTC
 ==================================================
 
 Sites Checked:
@@ -6,12 +6,4 @@ Sites Checked:
   Last Bottle: 1 match(es)
   Wine Spies: 1 match(es)
 
-Deals Notified (2):
-  [Wine Spies] Beau Vigne2022 'Myth' Napa Valley Cabernet Sauvignon
-    $39.0 (74% off)
-  [Last Bottle] La Coste de Los Andes Cabernet Franc Andillian Mendoza 2023
-    $16.0 (68% off)
-
-Notification Status (ntfy.sh):
-  DELIVERED (HTTP 200): Beau Vigne2022 'Myth' Napa Valley Cabernet Sauvignon
-  DELIVERED (HTTP 200): La Coste de Los Andes Cabernet Franc Andillian Mendoza 2023
+No new deals to notify.
