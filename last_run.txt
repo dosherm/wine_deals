@@ -1,4 +1,4 @@
-Last Run: 2026-05-09 23:57 UTC
+Last Run: 2026-05-10 04:06 UTC
 ==================================================
 
 Sites Checked:
@@ -6,4 +6,9 @@ Sites Checked:
   Last Bottle: no matches
   Wine Spies: 1 match(es)
 
-No new deals to notify.
+Deals Notified (1):
+  [Wine Spies] Jambe de Bois2019 Moon Mountain Cabernet Sauvignon
+    $38.0 (65% off)
+
+Notification Status (ntfy.sh):
+  DELIVERED (HTTP 200): Jambe de Bois2019 Moon Mountain Cabernet Sauvignon
