@@ -1,4 +1,4 @@
-Last Run: 2026-05-13 23:13 UTC
+Last Run: 2026-05-14 01:27 UTC
 ==================================================
 
 Sites Checked:
@@ -6,4 +6,9 @@ Sites Checked:
   Last Bottle: 1 match(es)
   Wine Spies: no matches
 
-No new deals to notify.
+Deals Notified (1):
+  [Last Bottle] Phantomir Ridge Cabernet Sauvignon Napa Valley 2024
+    $26.0 (74% off)
+
+Notification Status (ntfy.sh):
+  DELIVERED (HTTP 200): Phantomir Ridge Cabernet Sauvignon Napa Valley 2024
