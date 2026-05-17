@@ -1,4 +1,4 @@
-Last Run: 2026-05-17 19:20 UTC
+Last Run: 2026-05-17 20:25 UTC
 ==================================================
 
 Sites Checked:
@@ -6,9 +6,4 @@ Sites Checked:
   Last Bottle: no matches
   Wine Spies: 1 match(es)
 
-Deals Notified (1):
-  [Wine Spies] Dusty Nabor2023 Villa Colibri Vineyard Cabernet Sauvignon
-    $26.0 (60% off)
-
-Notification Status (ntfy.sh):
-  DELIVERED (HTTP 200): Dusty Nabor2023 Villa Colibri Vineyard Cabernet Sauvignon
+No new deals to notify.
