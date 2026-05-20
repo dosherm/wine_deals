@@ -1,4 +1,4 @@
-Last Run: 2026-05-20 19:02 UTC
+Last Run: 2026-05-20 21:18 UTC
 ==================================================
 
 Sites Checked:
@@ -6,4 +6,9 @@ Sites Checked:
   Last Bottle: no matches
   Wine Spies: no matches
 
-No new deals to notify.
+Deals Notified (1):
+  [WTSO] 93 Pt. Fidélitas Red Mountain Cabernet Sauvignon 2020
+    $19.99 (0% off)
+
+Notification Status (ntfy.sh):
+  DELIVERED (HTTP 200): 93 Pt. Fidélitas Red Mountain Cabernet Sauvignon 2020
