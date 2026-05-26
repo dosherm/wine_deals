@@ -1,9 +1,14 @@
-Last Run: 2026-05-26 04:45 UTC
+Last Run: 2026-05-26 16:49 UTC
 ==================================================
 
 Sites Checked:
   WTSO: no matches
   Last Bottle: 1 match(es)
-  Wine Spies: no matches
+  Wine Spies: 1 match(es)
 
-No new deals to notify.
+Deals Notified (1):
+  [Wine Spies] House Family Vineyards2017 Santa Cruz Mountains Estate Cabernet Sauvignon
+    $25.0 (67% off)
+
+Notification Status (ntfy.sh):
+  DELIVERED (HTTP 200): House Family Vineyards2017 Santa Cruz Mountains Estate Cabernet Sauvignon
