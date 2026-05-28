@@ -1,9 +1,14 @@
-Last Run: 2026-05-28 04:52 UTC
+Last Run: 2026-05-28 16:59 UTC
 ==================================================
 
 Sites Checked:
   WTSO: no matches
   Last Bottle: no matches
-  Wine Spies: no matches
+  Wine Spies: 1 match(es)
 
-No new deals to notify.
+Deals Notified (1):
+  [Wine Spies] Bello Family Vineyards2023 Rutherford Cabernet Sauvignon
+    $39.0 (61% off)
+
+Notification Status (ntfy.sh):
+  DELIVERED (HTTP 200): Bello Family Vineyards2023 Rutherford Cabernet Sauvignon
