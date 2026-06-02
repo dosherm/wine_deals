@@ -1,4 +1,4 @@
-Last Run: 2026-06-02 17:45 UTC
+Last Run: 2026-06-02 21:19 UTC
 ==================================================
 
 Sites Checked:
@@ -6,9 +6,4 @@ Sites Checked:
   Last Bottle: 1 match(es)
   Wine Spies: no matches
 
-Deals Notified (1):
-  [Last Bottle] Rudius Cabernet Sauvignon Howell Mountain Napa Valley 2023
-    $39.0 (70% off)
-
-Notification Status (ntfy.sh):
-  DELIVERED (HTTP 200): Rudius Cabernet Sauvignon Howell Mountain Napa Valley 2023
+No new deals to notify.
