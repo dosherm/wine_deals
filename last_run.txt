@@ -1,4 +1,4 @@
-Last Run: 2026-06-03 21:35 UTC
+Last Run: 2026-06-03 23:52 UTC
 ==================================================
 
 Sites Checked:
@@ -6,9 +6,4 @@ Sites Checked:
   Last Bottle: no matches
   Wine Spies: no matches
 
-Deals Notified (1):
-  [WTSO] 93 Pt. Chapel and Vale Mt Veeder Napa Valley Cabernet Sauvignon 2023
-    $22.99 (0% off)
-
-Notification Status (ntfy.sh):
-  DELIVERED (HTTP 200): 93 Pt. Chapel and Vale Mt Veeder Napa Valley Cabernet Sauvignon 2023
+No new deals to notify.
