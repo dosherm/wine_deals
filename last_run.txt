@@ -1,4 +1,4 @@
-Last Run: 2026-06-04 18:35 UTC
+Last Run: 2026-06-04 21:00 UTC
 ==================================================
 
 Sites Checked:
@@ -6,9 +6,4 @@ Sites Checked:
   Last Bottle: 1 match(es)
   Wine Spies: no matches
 
-Deals Notified (1):
-  [Last Bottle] RD Winery Cabernet Sauvignon Hundred Knot Napa Valley 2019
-    $29.0 (77% off)
-
-Notification Status (ntfy.sh):
-  DELIVERED (HTTP 200): RD Winery Cabernet Sauvignon Hundred Knot Napa Valley 2019
+No new deals to notify.
