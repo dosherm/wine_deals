@@ -1,4 +1,4 @@
-Last Run: 2026-06-07 22:39 UTC
+Last Run: 2026-06-08 00:18 UTC
 ==================================================
 
 Sites Checked:
@@ -6,4 +6,12 @@ Sites Checked:
   Last Bottle: 1 match(es)
   Wine Spies: 1 match(es)
 
-No new deals to notify.
+Deals Notified (2):
+  [Wine Spies] Serene Cellars2019 Atlas Peak Cabernet Sauvignon
+    $34.0 (75% off)
+  [Last Bottle] Tempus Fugit Cabernet Sauvignon Napa Valley 2024
+    $28.0 (72% off)
+
+Notification Status (ntfy.sh):
+  DELIVERED (HTTP 200): Serene Cellars2019 Atlas Peak Cabernet Sauvignon
+  DELIVERED (HTTP 200): Tempus Fugit Cabernet Sauvignon Napa Valley 2024
