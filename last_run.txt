@@ -1,4 +1,4 @@
-Last Run: 2026-06-09 23:01 UTC
+Last Run: 2026-06-10 01:37 UTC
 ==================================================
 
 Sites Checked:
@@ -6,4 +6,9 @@ Sites Checked:
   Last Bottle: 1 match(es)
   Wine Spies: no matches
 
-No new deals to notify.
+Deals Notified (1):
+  [Last Bottle] Dylan's Ghost Cabernet Sauvignon Napa Valley 2023
+    $35.0 (64% off)
+
+Notification Status (ntfy.sh):
+  DELIVERED (HTTP 200): Dylan's Ghost Cabernet Sauvignon Napa Valley 2023
