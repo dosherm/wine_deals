@@ -1,4 +1,4 @@
-Last Run: 2026-06-15 23:19 UTC
+Last Run: 2026-06-16 02:10 UTC
 ==================================================
 
 Sites Checked:
@@ -6,4 +6,12 @@ Sites Checked:
   Last Bottle: 1 match(es)
   Wine Spies: 1 match(es)
 
-No new deals to notify.
+Deals Notified (2):
+  [Last Bottle] No Love Lost Cabernet Sauvignon Napa Valley 2023
+    $17.0 (72% off)
+  [Wine Spies] Hawk and Horse Vineyards2023 'Block Three' Estate Cabernet Sauvignon
+    $36.0 (60% off)
+
+Notification Status (ntfy.sh):
+  DELIVERED (HTTP 200): No Love Lost Cabernet Sauvignon Napa Valley 2023
+  DELIVERED (HTTP 200): Hawk and Horse Vineyards2023 'Block Three' Estate Cabernet Sauvignon
