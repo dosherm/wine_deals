@@ -1,4 +1,4 @@
-Last Run: 2026-06-21 22:19 UTC
+Last Run: 2026-06-21 23:52 UTC
 ==================================================
 
 Sites Checked:
@@ -6,9 +6,4 @@ Sites Checked:
   Last Bottle: no matches
   Wine Spies: 1 match(es)
 
-Deals Notified (1):
-  [WTSO] Howell Mtn Vineyards Old Vine Zinfandel Howell Mountain 2017
-    $19.99 (0% off)
-
-Notification Status (ntfy.sh):
-  DELIVERED (HTTP 200): Howell Mtn Vineyards Old Vine Zinfandel Howell Mountain 2017
+No new deals to notify.
