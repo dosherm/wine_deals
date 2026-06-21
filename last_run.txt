@@ -1,14 +1,14 @@
-Last Run: 2026-06-21 02:00 UTC
+Last Run: 2026-06-21 07:16 UTC
 ==================================================
 
 Sites Checked:
   WTSO: 1 match(es)
   Last Bottle: no matches
-  Wine Spies: no matches
+  Wine Spies: 1 match(es)
 
 Deals Notified (1):
-  [WTSO] Chapel and Vale Stags Leap Napa Valley Cabernet Sauvignon 2023
-    $24.99 (0% off)
+  [Wine Spies] Mythical2023 Napa Valley Cabernet Sauvignon
+    $39.0 (70% off)
 
 Notification Status (ntfy.sh):
-  DELIVERED (HTTP 200): Chapel and Vale Stags Leap Napa Valley Cabernet Sauvignon 2023
+  DELIVERED (HTTP 200): Mythical2023 Napa Valley Cabernet Sauvignon
