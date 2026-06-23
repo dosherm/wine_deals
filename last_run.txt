@@ -1,14 +1,9 @@
-Last Run: 2026-06-23 18:06 UTC
+Last Run: 2026-06-23 20:35 UTC
 ==================================================
 
 Sites Checked:
-  WTSO: 1 match(es)
+  WTSO: no matches
   Last Bottle: no matches
   Wine Spies: 1 match(es)
 
-Deals Notified (1):
-  [WTSO] 95 Pt. Stag's Leap Wine Cellars Rancho Chimiles Vineyard Cabernet Sauvignon 2021
-    $39.99 (0% off)
-
-Notification Status (ntfy.sh):
-  DELIVERED (HTTP 200): 95 Pt. Stag's Leap Wine Cellars Rancho Chimiles Vineyard Cabernet Sauvignon 2021
+No new deals to notify.
