@@ -1,9 +1,14 @@
-Last Run: 2026-06-24 23:14 UTC
+Last Run: 2026-06-25 01:33 UTC
 ==================================================
 
 Sites Checked:
-  WTSO: no matches
+  WTSO: 1 match(es)
   Last Bottle: no matches
   Wine Spies: no matches
 
-No new deals to notify.
+Deals Notified (1):
+  [WTSO] 96 Pt. Avennia Arnaut Boushey Vineyard Syrah Yakima Valley 2022
+    $26.99 (0% off)
+
+Notification Status (ntfy.sh):
+  DELIVERED (HTTP 200): 96 Pt. Avennia Arnaut Boushey Vineyard Syrah Yakima Valley 2022
