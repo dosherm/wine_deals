@@ -1,4 +1,4 @@
-Last Run: 2026-06-25 22:26 UTC
+Last Run: 2026-06-25 23:54 UTC
 ==================================================
 
 Sites Checked:
@@ -6,9 +6,4 @@ Sites Checked:
   Last Bottle: no matches
   Wine Spies: 1 match(es)
 
-Deals Notified (1):
-  [Wine Spies] Trois Noix2022 Muir-Hanna Vineyard Cabernet Sauvignon
-    $28.0 (81% off)
-
-Notification Status (ntfy.sh):
-  DELIVERED (HTTP 200): Trois Noix2022 Muir-Hanna Vineyard Cabernet Sauvignon
+No new deals to notify.
