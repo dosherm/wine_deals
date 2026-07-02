@@ -1,14 +1,14 @@
-Last Run: 2026-07-02 04:13 UTC
+Last Run: 2026-07-02 15:23 UTC
 ==================================================
 
 Sites Checked:
   WTSO: no matches
-  Last Bottle: no matches
-  Wine Spies: 1 match(es)
+  Last Bottle: 1 match(es)
+  Wine Spies: no matches
 
 Deals Notified (1):
-  [Wine Spies] Voces2019 Napa Valley Cabernet Sauvignon
-    $27.0 (70% off)
+  [Last Bottle] Beringer Vineyards Cabernet Sauvignon Rhine House Cuvée Napa Valley 2023
+    $29.0 (64% off)
 
 Notification Status (ntfy.sh):
-  DELIVERED (HTTP 200): Voces2019 Napa Valley Cabernet Sauvignon
+  DELIVERED (HTTP 200): Beringer Vineyards Cabernet Sauvignon Rhine House Cuvée Napa Valley 2023
