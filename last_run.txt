@@ -1,9 +1,14 @@
-Last Run: 2026-07-06 16:25 UTC
+Last Run: 2026-07-06 18:26 UTC
 ==================================================
 
 Sites Checked:
   WTSO: no matches
-  Last Bottle: no matches
+  Last Bottle: 1 match(es)
   Wine Spies: no matches
 
-No new deals to notify.
+Deals Notified (1):
+  [Last Bottle] Il Molino di Grace Chianti Classico Riserva 2022
+    $24.0 (47% off)
+
+Notification Status (ntfy.sh):
+  DELIVERED (HTTP 200): Il Molino di Grace Chianti Classico Riserva 2022
