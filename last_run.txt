@@ -1,4 +1,4 @@
-Last Run: 2026-07-07 23:09 UTC
+Last Run: 2026-07-08 01:02 UTC
 ==================================================
 
 Sites Checked:
@@ -6,4 +6,9 @@ Sites Checked:
   Last Bottle: 1 match(es)
   Wine Spies: no matches
 
-No new deals to notify.
+Deals Notified (1):
+  [Last Bottle] Beaulieu Vineyard Cabernet Sauvignon Bonded Winery No. 71 Napa Valley 2023
+    $35.0 (61% off)
+
+Notification Status (ntfy.sh):
+  DELIVERED (HTTP 200): Beaulieu Vineyard Cabernet Sauvignon Bonded Winery No. 71 Napa Valley 2023
