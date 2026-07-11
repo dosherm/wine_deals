@@ -1,9 +1,14 @@
-Last Run: 2026-07-11 03:54 UTC
+Last Run: 2026-07-11 14:24 UTC
 ==================================================
 
 Sites Checked:
-  WTSO: 1 match(es)
+  WTSO: no matches
   Last Bottle: no matches
   Wine Spies: 1 match(es)
 
-No new deals to notify.
+Deals Notified (1):
+  [Wine Spies] Mount Langi Ghiran2022 'Talus' Grampians Shiraz
+    $39.0 (40% off)
+
+Notification Status (ntfy.sh):
+  DELIVERED (HTTP 200): Mount Langi Ghiran2022 'Talus' Grampians Shiraz
