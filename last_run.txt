@@ -1,4 +1,4 @@
-Last Run: 2026-07-12 23:30 UTC
+Last Run: 2026-07-13 03:45 UTC
 ==================================================
 
 Sites Checked:
@@ -6,4 +6,9 @@ Sites Checked:
   Last Bottle: 1 match(es)
   Wine Spies: no matches
 
-No new deals to notify.
+Deals Notified (1):
+  [Last Bottle] Housley's Century Oak Winery Cabernet Sauvignon Estate Judy's Vineyard Mokelumne River 2021
+    $14.0 (50% off)
+
+Notification Status (ntfy.sh):
+  DELIVERED (HTTP 200): Housley's Century Oak Winery Cabernet Sauvignon Estate Judy's Vineyard Mokelumne River 2021
