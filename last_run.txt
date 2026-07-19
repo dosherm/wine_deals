@@ -1,4 +1,4 @@
-Last Run: 2026-07-19 17:07 UTC
+Last Run: 2026-07-19 18:31 UTC
 ==================================================
 
 Sites Checked:
@@ -6,9 +6,4 @@ Sites Checked:
   Last Bottle: 1 match(es)
   Wine Spies: no matches
 
-Deals Notified (1):
-  [Last Bottle] Domaine Eden Cabernet Sauvignon Santa Cruz Mountains 2020
-    $18.0 (64% off)
-
-Notification Status (ntfy.sh):
-  DELIVERED (HTTP 200): Domaine Eden Cabernet Sauvignon Santa Cruz Mountains 2020
+No new deals to notify.
