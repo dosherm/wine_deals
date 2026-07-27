@@ -1,14 +1,14 @@
-Last Run: 2026-07-27 15:47 UTC
+Last Run: 2026-07-27 17:48 UTC
 ==================================================
 
 Sites Checked:
   WTSO: no matches
-  Last Bottle: no matches
+  Last Bottle: 1 match(es)
   Wine Spies: 1 match(es)
 
 Deals Notified (1):
-  [Wine Spies] X Winery2023 Howell Mountain Cabernet Sauvignon
-    $29.0 (71% off)
+  [Last Bottle] Récoltant Cabernet Sauvignon Artist Series Napa Valley 2023
+    $32.0 (74% off)
 
 Notification Status (ntfy.sh):
-  DELIVERED (HTTP 200): X Winery2023 Howell Mountain Cabernet Sauvignon
+  DELIVERED (HTTP 200): Récoltant Cabernet Sauvignon Artist Series Napa Valley 2023
