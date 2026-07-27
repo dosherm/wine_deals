@@ -1,4 +1,4 @@
-Last Run: 2026-07-27 17:48 UTC
+Last Run: 2026-07-27 19:46 UTC
 ==================================================
 
 Sites Checked:
@@ -6,9 +6,4 @@ Sites Checked:
   Last Bottle: 1 match(es)
   Wine Spies: 1 match(es)
 
-Deals Notified (1):
-  [Last Bottle] Récoltant Cabernet Sauvignon Artist Series Napa Valley 2023
-    $32.0 (74% off)
-
-Notification Status (ntfy.sh):
-  DELIVERED (HTTP 200): Récoltant Cabernet Sauvignon Artist Series Napa Valley 2023
+No new deals to notify.
