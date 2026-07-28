@@ -1,9 +1,14 @@
-Last Run: 2026-07-28 03:47 UTC
+Last Run: 2026-07-28 15:26 UTC
 ==================================================
 
 Sites Checked:
   WTSO: 1 match(es)
   Last Bottle: 1 match(es)
-  Wine Spies: 1 match(es)
+  Wine Spies: no matches
 
-No new deals to notify.
+Deals Notified (1):
+  [WTSO] 98 Pt.WeatherEye Syrah Red Mountain 2021
+    $39.99 (0% off)
+
+Notification Status (ntfy.sh):
+  DELIVERED (HTTP 200): 98 Pt.WeatherEye Syrah Red Mountain 2021
