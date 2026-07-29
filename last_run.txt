@@ -1,4 +1,4 @@
-Last Run: 2026-07-29 18:11 UTC
+Last Run: 2026-07-29 19:53 UTC
 ==================================================
 
 Sites Checked:
@@ -7,8 +7,8 @@ Sites Checked:
   Wine Spies: no matches
 
 Deals Notified (1):
-  [Last Bottle] Angles Cabernet Sauvignon Reserve Calistoga Napa Valley 2022
-    $39.0 (70% off)
+  [Last Bottle] Delectus Cabernet Sauvignon Cuvée Julia Mountain Blend Napa Valley 2023
+    $39.0 (79% off)
 
 Notification Status (ntfy.sh):
-  DELIVERED (HTTP 200): Angles Cabernet Sauvignon Reserve Calistoga Napa Valley 2022
+  DELIVERED (HTTP 200): Delectus Cabernet Sauvignon Cuvée Julia Mountain Blend Napa Valley 2023
