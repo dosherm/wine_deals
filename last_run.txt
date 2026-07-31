@@ -1,4 +1,4 @@
-Last Run: 2026-07-30 23:13 UTC
+Last Run: 2026-07-31 01:06 UTC
 ==================================================
 
 Sites Checked:
@@ -6,4 +6,9 @@ Sites Checked:
   Last Bottle: no matches
   Wine Spies: no matches
 
-No new deals to notify.
+Deals Notified (1):
+  [WTSO] 94 Pt. Canyon Ranch West Bench Cabernet Sauvignon Rutherford 2023
+    $19.99 (0% off)
+
+Notification Status (ntfy.sh):
+  DELIVERED (HTTP 200): 94 Pt. Canyon Ranch West Bench Cabernet Sauvignon Rutherford 2023
