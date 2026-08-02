@@ -1,9 +1,14 @@
-Last Run: 2026-08-02 04:06 UTC
+Last Run: 2026-08-02 14:41 UTC
 ==================================================
 
 Sites Checked:
   WTSO: no matches
   Last Bottle: no matches
-  Wine Spies: no matches
+  Wine Spies: 1 match(es)
 
-No new deals to notify.
+Deals Notified (1):
+  [Wine Spies] Smith Devereux2023 Nancy's Vineyard Napa Valley Cabernet Sauvignon
+    $25.0 (71% off)
+
+Notification Status (ntfy.sh):
+  DELIVERED (HTTP 200): Smith Devereux2023 Nancy's Vineyard Napa Valley Cabernet Sauvignon
