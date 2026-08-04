@@ -1,4 +1,4 @@
-Last Run: 2026-08-03 22:33 UTC
+Last Run: 2026-08-04 00:12 UTC
 ==================================================
 
 Sites Checked:
@@ -6,4 +6,9 @@ Sites Checked:
   Last Bottle: 1 match(es)
   Wine Spies: no matches
 
-No new deals to notify.
+Deals Notified (1):
+  [Last Bottle] Arrivé Cellars Cabernet Sauvignon Stags Leap Wine District Napa Valley 2023
+    $35.0 (78% off)
+
+Notification Status (ntfy.sh):
+  DELIVERED (HTTP 200): Arrivé Cellars Cabernet Sauvignon Stags Leap Wine District Napa Valley 2023
