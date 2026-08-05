@@ -1,4 +1,4 @@
-Last Run: 2026-08-04 23:34 UTC
+Last Run: 2026-08-05 03:22 UTC
 ==================================================
 
 Sites Checked:
@@ -6,4 +6,9 @@ Sites Checked:
   Last Bottle: no matches
   Wine Spies: 1 match(es)
 
-No new deals to notify.
+Deals Notified (1):
+  [Wine Spies] Arbuckle Ridge2023 Gateway Vineyard Cabernet Sauvignon
+    $34.0 (62% off)
+
+Notification Status (ntfy.sh):
+  DELIVERED (HTTP 200): Arbuckle Ridge2023 Gateway Vineyard Cabernet Sauvignon
