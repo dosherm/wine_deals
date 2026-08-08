@@ -1,9 +1,14 @@
-Last Run: 2026-08-08 17:37 UTC
+Last Run: 2026-08-08 18:49 UTC
 ==================================================
 
 Sites Checked:
   WTSO: no matches
-  Last Bottle: no matches
+  Last Bottle: 1 match(es)
   Wine Spies: no matches
 
-No new deals to notify.
+Deals Notified (1):
+  [Last Bottle] OVIS Syrah High Valley Lake County 2021
+    $19.0 (68% off)
+
+Notification Status (ntfy.sh):
+  DELIVERED (HTTP 200): OVIS Syrah High Valley Lake County 2021
