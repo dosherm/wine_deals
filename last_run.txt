@@ -1,4 +1,4 @@
-Last Run: 2026-08-08 22:37 UTC
+Last Run: 2026-08-08 23:36 UTC
 ==================================================
 
 Sites Checked:
@@ -6,9 +6,4 @@ Sites Checked:
   Last Bottle: 1 match(es)
   Wine Spies: no matches
 
-Deals Notified (1):
-  [Last Bottle] Skinner Vineyards Syrah El Dorado 2020
-    $14.0 (63% off)
-
-Notification Status (ntfy.sh):
-  DELIVERED (HTTP 200): Skinner Vineyards Syrah El Dorado 2020
+No new deals to notify.
