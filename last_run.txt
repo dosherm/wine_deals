@@ -1,4 +1,4 @@
-Last Run: 2026-08-12 00:08 UTC
+Last Run: 2026-08-12 03:05 UTC
 ==================================================
 
 Sites Checked:
@@ -6,9 +6,4 @@ Sites Checked:
   Last Bottle: no matches
   Wine Spies: 1 match(es)
 
-Deals Notified (1):
-  [Wine Spies] Eponymous2023 Napa Valley Cabernet Sauvignon
-    $35.0 (42% off)
-
-Notification Status (ntfy.sh):
-  DELIVERED (HTTP 200): Eponymous2023 Napa Valley Cabernet Sauvignon
+No new deals to notify.
