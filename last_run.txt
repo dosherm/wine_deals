@@ -1,14 +1,14 @@
-Last Run: 2026-08-14 14:17 UTC
+Last Run: 2026-08-14 15:22 UTC
 ==================================================
 
 Sites Checked:
   WTSO: 1 match(es)
-  Last Bottle: no matches
+  Last Bottle: 1 match(es)
   Wine Spies: no matches
 
 Deals Notified (1):
-  [WTSO] Vineyard 511 Diamond Mountain Cabernet Sauvignon 2016
+  [WTSO] 94 Pt. Vineyard 511 Diamond Mountain Cabernet Sauvignon 2016
     $39.99 (0% off)
 
 Notification Status (ntfy.sh):
-  DELIVERED (HTTP 200): Vineyard 511 Diamond Mountain Cabernet Sauvignon 2016
+  DELIVERED (HTTP 200): 94 Pt. Vineyard 511 Diamond Mountain Cabernet Sauvignon 2016
