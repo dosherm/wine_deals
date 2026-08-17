@@ -1,4 +1,4 @@
-Last Run: 2026-08-16 23:48 UTC
+Last Run: 2026-08-17 01:47 UTC
 ==================================================
 
 Sites Checked:
@@ -6,4 +6,9 @@ Sites Checked:
   Last Bottle: no matches
   Wine Spies: no matches
 
-No new deals to notify.
+Deals Notified (1):
+  [WTSO] Tradizionale Super Tuscan Sangiovese Blend Governo all'Uso Toscano 2024
+    $12.99 (0% off)
+
+Notification Status (ntfy.sh):
+  DELIVERED (HTTP 200): Tradizionale Super Tuscan Sangiovese Blend Governo all'Uso Toscano 2024
