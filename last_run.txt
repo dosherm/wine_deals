@@ -1,9 +1,14 @@
-Last Run: 2026-08-17 21:32 UTC
+Last Run: 2026-08-17 22:31 UTC
 ==================================================
 
 Sites Checked:
   WTSO: no matches
-  Last Bottle: no matches
+  Last Bottle: 1 match(es)
   Wine Spies: no matches
 
-No new deals to notify.
+Deals Notified (1):
+  [Last Bottle] Cornerstone Cellars Cabernet Sauvignon Benchlands Napa Valley 2021
+    $30.0 (68% off)
+
+Notification Status (ntfy.sh):
+  DELIVERED (HTTP 200): Cornerstone Cellars Cabernet Sauvignon Benchlands Napa Valley 2021
