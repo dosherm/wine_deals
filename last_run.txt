@@ -1,4 +1,4 @@
-Last Run: 2026-08-20 01:43 UTC
+Last Run: 2026-08-20 03:04 UTC
 ==================================================
 
 Sites Checked:
@@ -6,9 +6,4 @@ Sites Checked:
   Last Bottle: 1 match(es)
   Wine Spies: no matches
 
-Deals Notified (1):
-  [Last Bottle] Sterling Vineyards Cabernet Sauvignon Reserve Napa Valley 2023
-    $24.0 (70% off)
-
-Notification Status (ntfy.sh):
-  DELIVERED (HTTP 200): Sterling Vineyards Cabernet Sauvignon Reserve Napa Valley 2023
+No new deals to notify.
