@@ -1,4 +1,4 @@
-Last Run: 2026-08-23 23:51 UTC
+Last Run: 2026-08-24 01:49 UTC
 ==================================================
 
 Sites Checked:
@@ -6,4 +6,9 @@ Sites Checked:
   Last Bottle: no matches
   Wine Spies: 1 match(es)
 
-No new deals to notify.
+Deals Notified (1):
+  [Wine Spies] Grosgrain2022 Walla Walla Valley Estate Cabernet Sauvignon
+    $27.0 (46% off)
+
+Notification Status (ntfy.sh):
+  DELIVERED (HTTP 200): Grosgrain2022 Walla Walla Valley Estate Cabernet Sauvignon
