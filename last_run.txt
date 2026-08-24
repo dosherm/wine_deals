@@ -1,4 +1,4 @@
-Last Run: 2026-08-24 17:36 UTC
+Last Run: 2026-08-24 18:50 UTC
 ==================================================
 
 Sites Checked:
@@ -6,9 +6,4 @@ Sites Checked:
   Last Bottle: 1 match(es)
   Wine Spies: 1 match(es)
 
-Deals Notified (1):
-  [Last Bottle] Rudius Cabernet Sauvignon K.E. Oakville Napa Valley 2023
-    $39.0 (73% off)
-
-Notification Status (ntfy.sh):
-  DELIVERED (HTTP 200): Rudius Cabernet Sauvignon K.E. Oakville Napa Valley 2023
+No new deals to notify.
