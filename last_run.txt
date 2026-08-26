@@ -1,14 +1,14 @@
-Last Run: 2026-08-26 16:24 UTC
+Last Run: 2026-08-26 18:17 UTC
 ==================================================
 
 Sites Checked:
   WTSO: 1 match(es)
-  Last Bottle: no matches
+  Last Bottle: 1 match(es)
   Wine Spies: no matches
 
 Deals Notified (1):
-  [WTSO] Encantado Napa Valley Cabernet Sauvignon 2024
-    $24.99 (0% off)
+  [Last Bottle] Stuhlmuller Vineyards Cabernet Sauvignon Reserve Alexander Valley 2023
+    $39.0 (69% off)
 
 Notification Status (ntfy.sh):
-  DELIVERED (HTTP 200): Encantado Napa Valley Cabernet Sauvignon 2024
+  DELIVERED (HTTP 200): Stuhlmuller Vineyards Cabernet Sauvignon Reserve Alexander Valley 2023
