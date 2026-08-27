@@ -1,4 +1,4 @@
-Last Run: 2026-08-27 00:44 UTC
+Last Run: 2026-08-27 11:07 UTC
 ==================================================
 
 Sites Checked:
@@ -6,9 +6,4 @@ Sites Checked:
   Last Bottle: 1 match(es)
   Wine Spies: no matches
 
-Deals Notified (1):
-  [Last Bottle] Stuhlmuller Vineyards Cabernet Sauvignon Reserve Alexander Valley 2023
-    $39.0 (69% off)
-
-Notification Status (ntfy.sh):
-  DELIVERED (HTTP 200): Stuhlmuller Vineyards Cabernet Sauvignon Reserve Alexander Valley 2023
+No new deals to notify.
