@@ -1,4 +1,4 @@
-Last Run: 2026-08-30 22:40 UTC
+Last Run: 2026-08-31 01:19 UTC
 ==================================================
 
 Sites Checked:
@@ -6,4 +6,9 @@ Sites Checked:
   Last Bottle: no matches
   Wine Spies: 1 match(es)
 
-No new deals to notify.
+Deals Notified (1):
+  [Wine Spies] Bello Family Vineyards2023 'Megahertz' Napa Valley Cabernet Sauvignon
+    $28.0 (63% off)
+
+Notification Status (ntfy.sh):
+  DELIVERED (HTTP 200): Bello Family Vineyards2023 'Megahertz' Napa Valley Cabernet Sauvignon
