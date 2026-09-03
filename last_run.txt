@@ -1,4 +1,4 @@
-Last Run: 2026-09-03 19:45 UTC
+Last Run: 2026-09-03 22:28 UTC
 ==================================================
 
 Sites Checked:
@@ -6,4 +6,9 @@ Sites Checked:
   Last Bottle: no matches
   Wine Spies: 1 match(es)
 
-No new deals to notify.
+Deals Notified (1):
+  [WTSO] 95 Pt. Rocca di Castagnoli Chianti Classico Gran Selezione Stielle 2020
+    $24.99 (0% off)
+
+Notification Status (ntfy.sh):
+  DELIVERED (HTTP 200): 95 Pt. Rocca di Castagnoli Chianti Classico Gran Selezione Stielle 2020
