@@ -1,14 +1,9 @@
-Last Run: 2026-09-05 04:12 UTC
+Last Run: 2026-09-05 15:55 UTC
 ==================================================
 
 Sites Checked:
   WTSO: no matches
   Last Bottle: no matches
-  Wine Spies: 1 match(es)
+  Wine Spies: no matches
 
-Deals Notified (1):
-  [Wine Spies] Acre2020 Yountville Napa Valley Cabernet Sauvignon
-    $25.0 (73% off)
-
-Notification Status (ntfy.sh):
-  DELIVERED (HTTP 200): Acre2020 Yountville Napa Valley Cabernet Sauvignon
+No new deals to notify.
