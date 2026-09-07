@@ -1,4 +1,4 @@
-Last Run: 2026-09-06 23:03 UTC
+Last Run: 2026-09-07 01:15 UTC
 ==================================================
 
 Sites Checked:
@@ -6,4 +6,9 @@ Sites Checked:
   Last Bottle: no matches
   Wine Spies: 1 match(es)
 
-No new deals to notify.
+Deals Notified (1):
+  [Wine Spies] Bougetz Cellars2022 'Ardante' Mt. Veeder Cabernet Sauvignon
+    $28.0 (67% off)
+
+Notification Status (ntfy.sh):
+  DELIVERED (HTTP 200): Bougetz Cellars2022 'Ardante' Mt. Veeder Cabernet Sauvignon
