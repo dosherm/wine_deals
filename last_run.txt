@@ -1,9 +1,14 @@
-Last Run: 2026-09-08 05:05 UTC
+Last Run: 2026-09-08 17:12 UTC
 ==================================================
 
 Sites Checked:
-  WTSO: 1 match(es)
+  WTSO: no matches
   Last Bottle: no matches
-  Wine Spies: no matches
+  Wine Spies: 1 match(es)
 
-No new deals to notify.
+Deals Notified (1):
+  [Wine Spies] Chivalry2022 Napa Valley Cabernet Sauvignon
+    $33.0 (70% off)
+
+Notification Status (ntfy.sh):
+  DELIVERED (HTTP 200): Chivalry2022 Napa Valley Cabernet Sauvignon
