@@ -1,9 +1,14 @@
-Last Run: 2026-09-09 06:34 UTC
+Last Run: 2026-09-09 17:06 UTC
 ==================================================
 
 Sites Checked:
   WTSO: no matches
   Last Bottle: 1 match(es)
-  Wine Spies: 1 match(es)
+  Wine Spies: no matches
 
-No new deals to notify.
+Deals Notified (1):
+  [Last Bottle] OnQ Cabernet Sauvignon Oakville Napa Valley 2023
+    $39.0 (82% off)
+
+Notification Status (ntfy.sh):
+  DELIVERED (HTTP 200): OnQ Cabernet Sauvignon Oakville Napa Valley 2023
