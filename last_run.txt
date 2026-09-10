@@ -1,14 +1,9 @@
-Last Run: 2026-09-10 16:57 UTC
+Last Run: 2026-09-10 19:33 UTC
 ==================================================
 
 Sites Checked:
   WTSO: no matches
-  Last Bottle: 1 match(es)
+  Last Bottle: no matches
   Wine Spies: 1 match(es)
 
-Deals Notified (1):
-  [Wine Spies] Wolf's Head2019 Napa Valley Cabernet Sauvignon
-    $39.0 (57% off)
-
-Notification Status (ntfy.sh):
-  DELIVERED (HTTP 200): Wolf's Head2019 Napa Valley Cabernet Sauvignon
+No new deals to notify.
