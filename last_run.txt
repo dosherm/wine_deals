@@ -1,4 +1,4 @@
-Last Run: 2026-09-13 19:18 UTC
+Last Run: 2026-09-13 21:35 UTC
 ==================================================
 
 Sites Checked:
@@ -6,4 +6,9 @@ Sites Checked:
   Last Bottle: no matches
   Wine Spies: 1 match(es)
 
-No new deals to notify.
+Deals Notified (1):
+  [Wine Spies] Random Ridge2023 'Willy Nilly' Moon Mountain District Sangiovese
+    $25.0 (58% off)
+
+Notification Status (ntfy.sh):
+  ERROR: Random Ridge2023 'Willy Nilly' Moon Mountain District Sangiovese — HTTPSConnectionPool(host='ntfy.sh', port=443): Max retries exceeded with url: /wine-deals-under40 (Caused by NewConnectionError("HTTPSConnection(host='ntfy.sh', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable"))
