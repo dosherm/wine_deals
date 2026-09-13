@@ -1,14 +1,9 @@
-Last Run: 2026-09-13 16:55 UTC
+Last Run: 2026-09-13 19:18 UTC
 ==================================================
 
 Sites Checked:
   WTSO: no matches
-  Last Bottle: 1 match(es)
+  Last Bottle: no matches
   Wine Spies: 1 match(es)
 
-Deals Notified (1):
-  [Wine Spies] Random Ridge2022 Mount Veeder Reserve Cabernet Sauvignon
-    $29.0 (71% off)
-
-Notification Status (ntfy.sh):
-  DELIVERED (HTTP 200): Random Ridge2022 Mount Veeder Reserve Cabernet Sauvignon
+No new deals to notify.
