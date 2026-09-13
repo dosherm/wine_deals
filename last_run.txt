@@ -1,9 +1,14 @@
-Last Run: 2026-09-13 01:21 UTC
+Last Run: 2026-09-13 06:42 UTC
 ==================================================
 
 Sites Checked:
   WTSO: no matches
-  Last Bottle: no matches
+  Last Bottle: 1 match(es)
   Wine Spies: no matches
 
-No new deals to notify.
+Deals Notified (1):
+  [Last Bottle] Head High Syrah Sonoma County 2023
+    $13.0 (50% off)
+
+Notification Status (ntfy.sh):
+  DELIVERED (HTTP 200): Head High Syrah Sonoma County 2023
