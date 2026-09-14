@@ -1,4 +1,4 @@
-Last Run: 2026-09-14 00:02 UTC
+Last Run: 2026-09-14 05:21 UTC
 ==================================================
 
 Sites Checked:
@@ -6,9 +6,4 @@ Sites Checked:
   Last Bottle: no matches
   Wine Spies: 1 match(es)
 
-Deals Notified (1):
-  [Wine Spies] Random Ridge2023 'Willy Nilly' Moon Mountain District Sangiovese
-    $25.0 (58% off)
-
-Notification Status (ntfy.sh):
-  DELIVERED (HTTP 200): Random Ridge2023 'Willy Nilly' Moon Mountain District Sangiovese
+No new deals to notify.
