@@ -1,4 +1,4 @@
-Last Run: 2026-09-20 16:44 UTC
+Last Run: 2026-09-20 19:20 UTC
 ==================================================
 
 Sites Checked:
@@ -6,9 +6,4 @@ Sites Checked:
   Last Bottle: no matches
   Wine Spies: no matches
 
-Deals Notified (1):
-  [WTSO] 95 Pt. Brandlin Estate Mount Veeder Cabernet Sauvignon 2019 Napa Valley
-    $39.99 (0% off)
-
-Notification Status (ntfy.sh):
-  DELIVERED (HTTP 200): 95 Pt. Brandlin Estate Mount Veeder Cabernet Sauvignon 2019 Napa Valley
+No new deals to notify.
