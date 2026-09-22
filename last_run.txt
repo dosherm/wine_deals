@@ -1,14 +1,9 @@
-Last Run: 2026-09-22 07:37 UTC
+Last Run: 2026-09-22 17:35 UTC
 ==================================================
 
 Sites Checked:
   WTSO: no matches
-  Last Bottle: 1 match(es)
+  Last Bottle: no matches
   Wine Spies: 1 match(es)
 
-Deals Notified (1):
-  [Wine Spies] Royal Prince2021 Napa Valley Reserve Cabernet Sauvignon
-    $35.0 (63% off)
-
-Notification Status (ntfy.sh):
-  DELIVERED (HTTP 200): Royal Prince2021 Napa Valley Reserve Cabernet Sauvignon
+No new deals to notify.
