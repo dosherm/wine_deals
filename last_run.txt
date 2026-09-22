@@ -1,14 +1,14 @@
-Last Run: 2026-09-22 01:32 UTC
+Last Run: 2026-09-22 07:37 UTC
 ==================================================
 
 Sites Checked:
   WTSO: no matches
   Last Bottle: 1 match(es)
-  Wine Spies: no matches
+  Wine Spies: 1 match(es)
 
 Deals Notified (1):
-  [Last Bottle] KHK Cabernet Sauvignon Napa Valley 2024
-    $39.0 (51% off)
+  [Wine Spies] Royal Prince2021 Napa Valley Reserve Cabernet Sauvignon
+    $35.0 (63% off)
 
 Notification Status (ntfy.sh):
-  DELIVERED (HTTP 200): KHK Cabernet Sauvignon Napa Valley 2024
+  DELIVERED (HTTP 200): Royal Prince2021 Napa Valley Reserve Cabernet Sauvignon
