@@ -1,17 +1,9 @@
-Last Run: 2026-10-03 01:22 UTC
+Last Run: 2026-10-03 07:00 UTC
 ==================================================
 
 Sites Checked:
   WTSO: no matches
   Last Bottle: 1 match(es)
-  Wine Spies: 1 match(es)
+  Wine Spies: no matches
 
-Deals Notified (2):
-  [Wine Spies] Heir Apparent2023 Napa Valley Reserve Cabernet Sauvignon
-    $39.0 (69% off)
-  [Last Bottle] Beringer Vineyards Cabernet Sauvignon Rhine House Cuvée Napa Valley 2023
-    $29.0 (64% off)
-
-Notification Status (ntfy.sh):
-  DELIVERED (HTTP 200): Heir Apparent2023 Napa Valley Reserve Cabernet Sauvignon
-  DELIVERED (HTTP 200): Beringer Vineyards Cabernet Sauvignon Rhine House Cuvée Napa Valley 2023
+No new deals to notify.
