@@ -1,4 +1,4 @@
-Last Run: 2026-10-07 02:14 UTC
+Last Run: 2026-10-07 09:09 UTC
 ==================================================
 
 Sites Checked:
@@ -6,9 +6,4 @@ Sites Checked:
   Last Bottle: no matches
   Wine Spies: no matches
 
-Deals Notified (1):
-  [WTSO] 94 Pt. Poggio al Sale Chianti DOCG 2025
-    $11.99 (0% off)
-
-Notification Status (ntfy.sh):
-  DELIVERED (HTTP 200): 94 Pt. Poggio al Sale Chianti DOCG 2025
+No new deals to notify.
