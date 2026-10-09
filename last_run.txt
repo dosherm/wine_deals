@@ -1,9 +1,14 @@
-Last Run: 2026-10-09 05:53 UTC
+Last Run: 2026-10-09 18:44 UTC
 ==================================================
 
 Sites Checked:
   WTSO: no matches
   Last Bottle: no matches
-  Wine Spies: no matches
+  Wine Spies: 1 match(es)
 
-No new deals to notify.
+Deals Notified (1):
+  [Wine Spies] NILU2022 Chalk Hill Cabernet Sauvignon
+    $24.0 (60% off)
+
+Notification Status (ntfy.sh):
+  DELIVERED (HTTP 200): NILU2022 Chalk Hill Cabernet Sauvignon
