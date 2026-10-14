@@ -1,9 +1,14 @@
-Last Run: 2026-10-14 04:39 UTC
+Last Run: 2026-10-14 17:55 UTC
 ==================================================
 
 Sites Checked:
   WTSO: no matches
-  Last Bottle: no matches
+  Last Bottle: 1 match(es)
   Wine Spies: no matches
 
-No new deals to notify.
+Deals Notified (1):
+  [Last Bottle] Sixteen by Twenty Cabernet Sauvignon Napa Valley 2018
+    $25.0 (67% off)
+
+Notification Status (ntfy.sh):
+  DELIVERED (HTTP 200): Sixteen by Twenty Cabernet Sauvignon Napa Valley 2018
