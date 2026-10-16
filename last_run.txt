@@ -1,14 +1,9 @@
-Last Run: 2026-10-16 20:01 UTC
+Last Run: 2026-10-16 22:57 UTC
 ==================================================
 
 Sites Checked:
   WTSO: no matches
-  Last Bottle: 1 match(es)
+  Last Bottle: no matches
   Wine Spies: no matches
 
-Deals Notified (1):
-  [Last Bottle] Angles Cabernet Sauvignon Reserve Calistoga Napa Valley 2022
-    $39.0 (70% off)
-
-Notification Status (ntfy.sh):
-  DELIVERED (HTTP 200): Angles Cabernet Sauvignon Reserve Calistoga Napa Valley 2022
+No new deals to notify.
