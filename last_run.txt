@@ -1,14 +1,14 @@
-Last Run: 2026-10-16 04:16 UTC
+Last Run: 2026-10-16 17:18 UTC
 ==================================================
 
 Sites Checked:
   WTSO: no matches
-  Last Bottle: no matches
-  Wine Spies: 1 match(es)
+  Last Bottle: 1 match(es)
+  Wine Spies: no matches
 
 Deals Notified (1):
-  [Wine Spies] Concannon Vineyard2023 'Mother Vine' Reserve Cabernet Sauvignon
-    $33.0 (40% off)
+  [Last Bottle] Delectus Cabernet Sauvignon Bear Crossing Atlas Peak Napa Valley 2023
+    $39.0 (76% off)
 
 Notification Status (ntfy.sh):
-  DELIVERED (HTTP 200): Concannon Vineyard2023 'Mother Vine' Reserve Cabernet Sauvignon
+  DELIVERED (HTTP 200): Delectus Cabernet Sauvignon Bear Crossing Atlas Peak Napa Valley 2023
