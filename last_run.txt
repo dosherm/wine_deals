@@ -1,9 +1,14 @@
-Last Run: 2026-10-17 16:17 UTC
+Last Run: 2026-10-17 18:44 UTC
 ==================================================
 
 Sites Checked:
   WTSO: no matches
-  Last Bottle: no matches
+  Last Bottle: 1 match(es)
   Wine Spies: no matches
 
-No new deals to notify.
+Deals Notified (1):
+  [Last Bottle] Il Molino di Grace Chianti Classico 2024
+    $22.0 (51% off)
+
+Notification Status (ntfy.sh):
+  DELIVERED (HTTP 200): Il Molino di Grace Chianti Classico 2024
