@@ -1,4 +1,4 @@
-Last Run: 2026-10-19 19:12 UTC
+Last Run: 2026-10-19 23:00 UTC
 ==================================================
 
 Sites Checked:
@@ -6,12 +6,9 @@ Sites Checked:
   Last Bottle: no matches
   Wine Spies: 1 match(es)
 
-Deals Notified (2):
-  [Wine Spies] RIDGE2022 Lytton Estate Petite Sirah
-    $39.0 (30% off)
-  [WTSO] 93 Pt. Pine and Brown Mount Veeder Reserve Cabernet Sauvignon 2024
-    $29.99 (0% off)
+Deals Notified (1):
+  [WTSO] 95 Pt. Cantalici Chianti Classico 2023
+    $19.99 (0% off)
 
 Notification Status (ntfy.sh):
-  DELIVERED (HTTP 200): RIDGE2022 Lytton Estate Petite Sirah
-  DELIVERED (HTTP 200): 93 Pt. Pine and Brown Mount Veeder Reserve Cabernet Sauvignon 2024
+  DELIVERED (HTTP 200): 95 Pt. Cantalici Chianti Classico 2023
