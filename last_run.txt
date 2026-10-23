@@ -1,14 +1,9 @@
-Last Run: 2026-10-23 17:49 UTC
+Last Run: 2026-10-23 21:17 UTC
 ==================================================
 
 Sites Checked:
-  WTSO: 1 match(es)
+  WTSO: no matches
   Last Bottle: no matches
   Wine Spies: no matches
 
-Deals Notified (1):
-  [WTSO] 94 Pt. Empyreum Stags Leap Cabernet Sauvignon 2023
-    $26.99 (0% off)
-
-Notification Status (ntfy.sh):
-  DELIVERED (HTTP 200): 94 Pt. Empyreum Stags Leap Cabernet Sauvignon 2023
+No new deals to notify.
