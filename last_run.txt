@@ -1,4 +1,4 @@
-Last Run: 2026-10-24 21:48 UTC
+Last Run: 2026-10-25 00:10 UTC
 ==================================================
 
 Sites Checked:
@@ -6,4 +6,9 @@ Sites Checked:
   Last Bottle: 1 match(es)
   Wine Spies: no matches
 
-No new deals to notify.
+Deals Notified (1):
+  [Last Bottle] Smith Devereux Cabernet Sauvignon Single Vineyard Oak Knoll District Napa Valley 2023
+    $22.0 (74% off)
+
+Notification Status (ntfy.sh):
+  DELIVERED (HTTP 200): Smith Devereux Cabernet Sauvignon Single Vineyard Oak Knoll District Napa Valley 2023
