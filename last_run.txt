@@ -1,9 +1,17 @@
-Last Run: 2026-10-29 02:43 UTC
+Last Run: 2026-10-29 18:54 UTC
 ==================================================
 
 Sites Checked:
   WTSO: no matches
-  Last Bottle: no matches
-  Wine Spies: no matches
+  Last Bottle: 1 match(es)
+  Wine Spies: 1 match(es)
 
-No new deals to notify.
+Deals Notified (2):
+  [Last Bottle] Beaulieu Vineyard Cabernet Sauvignon Bonded Winery No. 71 Napa Valley 2023
+    $35.0 (61% off)
+  [Wine Spies] Robledo2019 'Seven Brothers' Napa Valley Cabernet Sauvignon
+    $20.0 (56% off)
+
+Notification Status (ntfy.sh):
+  DELIVERED (HTTP 200): Beaulieu Vineyard Cabernet Sauvignon Bonded Winery No. 71 Napa Valley 2023
+  DELIVERED (HTTP 200): Robledo2019 'Seven Brothers' Napa Valley Cabernet Sauvignon
