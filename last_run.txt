@@ -1,14 +1,9 @@
-Last Run: 2026-11-03 20:01 UTC
+Last Run: 2026-11-04 00:48 UTC
 ==================================================
 
 Sites Checked:
-  WTSO: 1 match(es)
+  WTSO: no matches
   Last Bottle: no matches
   Wine Spies: no matches
 
-Deals Notified (1):
-  [WTSO] Encantado Napa Valley Cabernet Sauvignon 2024
-    $24.99 (0% off)
-
-Notification Status (ntfy.sh):
-  DELIVERED (HTTP 200): Encantado Napa Valley Cabernet Sauvignon 2024
+No new deals to notify.
