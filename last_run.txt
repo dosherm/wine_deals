@@ -1,9 +1,14 @@
-Last Run: 2026-11-05 07:51 UTC
+Last Run: 2026-11-05 20:33 UTC
 ==================================================
 
 Sites Checked:
   WTSO: no matches
   Last Bottle: no matches
-  Wine Spies: no matches
+  Wine Spies: 1 match(es)
 
-No new deals to notify.
+Deals Notified (1):
+  [Wine Spies] Cannatelli2015 'Legacy Oaks' Napa Valley Cabernet Sauvignon
+    $28.0 (71% off)
+
+Notification Status (ntfy.sh):
+  DELIVERED (HTTP 200): Cannatelli2015 'Legacy Oaks' Napa Valley Cabernet Sauvignon
