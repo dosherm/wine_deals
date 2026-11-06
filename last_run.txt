@@ -1,4 +1,4 @@
-Last Run: 2026-11-05 20:33 UTC
+Last Run: 2026-11-06 01:27 UTC
 ==================================================
 
 Sites Checked:
@@ -7,8 +7,8 @@ Sites Checked:
   Wine Spies: 1 match(es)
 
 Deals Notified (1):
-  [Wine Spies] Cannatelli2015 'Legacy Oaks' Napa Valley Cabernet Sauvignon
-    $28.0 (71% off)
+  [Wine Spies] X Winery2023 Howell Mountain Cabernet Sauvignon
+    $29.0 (71% off)
 
 Notification Status (ntfy.sh):
-  DELIVERED (HTTP 200): Cannatelli2015 'Legacy Oaks' Napa Valley Cabernet Sauvignon
+  DELIVERED (HTTP 200): X Winery2023 Howell Mountain Cabernet Sauvignon
