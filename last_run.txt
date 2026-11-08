@@ -1,14 +1,9 @@
-Last Run: 2026-11-08 18:17 UTC
+Last Run: 2026-11-08 22:22 UTC
 ==================================================
 
 Sites Checked:
-  WTSO: 1 match(es)
+  WTSO: no matches
   Last Bottle: no matches
   Wine Spies: no matches
 
-Deals Notified (1):
-  [WTSO] 94 Pt. Stag's Leap Wine Cellars Cabernet Sauvignon Napa Valley Winemaker Series Lot 1 2024
-    $39.99 (0% off)
-
-Notification Status (ntfy.sh):
-  DELIVERED (HTTP 200): 94 Pt. Stag's Leap Wine Cellars Cabernet Sauvignon Napa Valley Winemaker Series Lot 1 2024
+No new deals to notify.
