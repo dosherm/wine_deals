@@ -1,9 +1,14 @@
-Last Run: 2026-11-14 07:31 UTC
+Last Run: 2026-11-14 18:41 UTC
 ==================================================
 
 Sites Checked:
   WTSO: no matches
-  Last Bottle: no matches
+  Last Bottle: 1 match(es)
   Wine Spies: no matches
 
-No new deals to notify.
+Deals Notified (1):
+  [Last Bottle] Mystery Cabernet Sauvignon "CAD" Napa Valley 2022
+    $39.0 (59% off)
+
+Notification Status (ntfy.sh):
+  DELIVERED (HTTP 200): Mystery Cabernet Sauvignon "CAD" Napa Valley 2022
