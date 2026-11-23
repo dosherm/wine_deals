@@ -1,9 +1,14 @@
-Last Run: 2026-11-23 01:04 UTC
+Last Run: 2026-11-23 09:39 UTC
 ==================================================
 
 Sites Checked:
   WTSO: no matches
   Last Bottle: no matches
-  Wine Spies: no matches
+  Wine Spies: 1 match(es)
 
-No new deals to notify.
+Deals Notified (1):
+  [Wine Spies] Private Property by Caraccioli2023 SLH Syrah+Gamay
+    $24.0 (40% off)
+
+Notification Status (ntfy.sh):
+  DELIVERED (HTTP 200): Private Property by Caraccioli2023 SLH Syrah+Gamay
